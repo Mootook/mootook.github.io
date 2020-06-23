@@ -11,13 +11,14 @@
   <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/style.css?v=3fc01751a92e387c61a5c3d517956995dcf21842">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="/assets/js/respond.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
   <body>
-    <div class="wrapper">
-
+    {% include navbar.html %}
+    <div class="wrapper" style="max-width: 800px;">
       <section>
         <div id="title">
           <h1>Your awesome title</h1>
@@ -27,8 +28,10 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
       </section>
+
+      {{ content }}
     </div>
-    {{ content }}
+    
 
     
   </body>
