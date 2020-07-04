@@ -6,10 +6,10 @@ permalink: /
   <h1>Case Studies</h1>
   {% for category in site.categories %}
   {% assign category_name = category | first %}
-  <h2>{{ category_name | capitalize }}</h2>
+  <h3>{{ category_name | capitalize }}</h3>
     <div>
     {% for post in site.categories[category_name] %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endfor %}
     </div>
   {% endfor %}

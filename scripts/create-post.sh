@@ -18,11 +18,12 @@ set_jekyll_info() {
   echo "title: $TITLE" >> $FILE
   echo "date: $RAW_DATE" >> $FILE
   echo "category: $POST_TYPE" >> $FILE
+  echo "permalink: /$POST_TYPE-$TITLE" >> $FILE
   echo "---" >> $FILE
 }
 
 if [[ $POST_TYPE == "design" || $POST_TYPE == "engineering" ]]; then
-  echo "Create a design blog post at current date, with $FILE as the title."
+  echo "Created a design blog post at current date, with $FILE as the title."
   cd "$BASE_DIR/$POST_TYPE"
   touch $FILE
   set_jekyll_info
