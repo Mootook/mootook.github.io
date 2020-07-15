@@ -22,7 +22,7 @@ set_jekyll_info() {
   echo "---" >> $FILE
 }
 
-if [[ $POST_TYPE == "design" || $POST_TYPE == "engineering" ]]; then
+if [[ $POST_TYPE == "design" || $POST_TYPE == "engineering"  || $POST_TYPE == "notes" ]]; then
   echo "Created a design blog post at current date, with $FILE as the title."
   cd "$BASE_DIR/$POST_TYPE"
   touch $FILE

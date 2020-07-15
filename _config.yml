@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 
-categories: design engineering
+categories: design engineering notes
 # Build settings
 theme: jekyll-theme-midnight
 plugins:
