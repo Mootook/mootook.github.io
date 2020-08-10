@@ -20,7 +20,8 @@
 </head>
   <body>
     {% include navbar.html %}
-    <div class="wrapper" style="max-width: 800px;">
+    <div class="wrapper">
+      {% include disclaimer.html %}
       <div class='case-study-page-wrapper'>
         {{ content }}
       </div>

@@ -11,7 +11,5 @@ permalink: /notes-horizon-zero-dawn
 ---
 
 ### Side-quest Anatomy
-![sidequest-1](https://i.imgur.com/dHwTflgm.jpg){: .post-image}
+![sidequest-1](https://i.ibb.co/kKPG6gm/sidequest-1.png){: .post-image}
 
-
-![Imgur](https://i.imgur.com/TTfUtkr.jpg)
