@@ -21,11 +21,12 @@
 title: Mootook
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Description
+  Notes on things
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_profile: https://github.com/Mootook
+email: alexanderkmutuc@gmail.com
+linkedin: https://www.linkedin.com/in/alexander-mutuc/
 
 
 categories: design engineering notes

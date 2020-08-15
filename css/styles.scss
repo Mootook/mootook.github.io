@@ -1,27 +1,52 @@
 ---
 ---
 
+html,
+body {
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   max-width: unset;
   width: 80%;
+  flex: 1 0 auto;
+  .disclaimer {
+    margin-top: 10px;
+  }
 }
-// Add your styles here
-.case-studies-wrapper {
+
+// Post Styles
+.post-content-wrapper {
   width: 100%;
   padding: 20px 0 0 0;
   .category-list-header {
     padding: 20px 0 0 0;
   }
+  .post-image {
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
-.case-study-page-wrapper {
-  padding: 20px 0 0 0;
+// Includes Styles
+#sticky-footer {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100px;
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
 }
 
-.post-image {
-  width: 75%;
-  height: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+
