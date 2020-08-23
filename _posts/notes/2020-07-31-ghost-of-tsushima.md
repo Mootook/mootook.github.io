@@ -5,11 +5,9 @@ date: Fri Jul 31 00:32:04 PDT 2020
 category: notes
 permalink: /notes-ghost-of-tsushima
 ---
+<h1 class="header main">Ghost of Tsushima [WIP]</h1>
 
-# Ghost of Tsushima [WIP]
----
-
-## Cinematic Visuals - [WIP]
+<h2 class="header main">Cinematic Visuals - [WIP]</h2>
 Most aspects of GoT seem in service of its visual style (Akira Kurosawa films)
 - No number on leveling up (pros and cons)
 - Camera positioning
@@ -19,40 +17,40 @@ Most aspects of GoT seem in service of its visual style (Akira Kurosawa films)
 
 Favorite thing about GoT is the subtle 'leveling up', the game allows for. There's a skill tree, but the only indication of experience or player level is the white icon that fills up after missions. Progression feels organic, challenges seem aspirational and not impossible, flush with both the narrative and gameplay.
 
-## Side-Quests
+<h2 class="header main">Combat - [WIP]</h2>
 
-A great chunk of GoT is composed of episodic missions that, for the most part, are tangential to the main story but provide incentive through through material rewards (crafting supplies, armor upgrades), experience to level up, and narrative arcs with supporting characters.
 
-There are three "types" of side-quests:  
+<h2 class="header main">Side-Quests</h2>
+
+A great chunk of GoT is composed of episodic missions that, for the most part, are tangential to the main story but provide incentive through material rewards (crafting supplies, armor upgrades), experience to level up, and narrative arcs with supporting characters.
+
+There are three types of side-quests:  
 
 **Major** -- often multi-part, focusing on the development of a side character's story (Sensei Ishikawa and the hunt for his student Tomoe, for example). These are brought to the player's attention through the narrative progression of the main story. Rewards include materials, upgrade components, or key weapons/items/armor.
 
-**Minor** -- self-contained, short missions focusing on external (to Jin) events that, if left unattended, don't seem to effect to the main gameplay arc. Often brought to the attention of the player through exploration or guided interaction with the world (broken cart on a main path, golden bird guiding you to distraught villager, speech bubble over villager).
+**Minor** -- self-contained, short missions focusing on external (to Jin) events that, if left unattended, don't seem to effect to the main gameplay arc. Often brought to the attention of the player through exploration or guided interaction with the world (broken cart on a main path, golden bird guiding you to distraught villager, villager with a speech bubble).
 Rewards include materials and upgrade components.
 
-**Mythical** -- self contained, medium length missions focusing on an ancient legend that tend to involve a piece of armor, weapon, or new attack method (strong incentive for player. Aligns narrative goal of quest with tangible reward). Introduced much like minor quests but only through village musician/story-tellers. Rewards include armor, weapons, additions to skill tree.
+**Mythical** -- self contained, medium length missions focusing on an ancient legend that tend to involve a piece of armor, weapon, or new attack method (strong incentive for player. Aligns narrative goal of quest with tangible reward. Introduced much like minor quests but only through village musician/story-tellers. Rewards include armor, weapons, additions to skill tree.
 
-### Minor Side-Quests and Small Arena Level Design
-
-#### Minor Side-Quest Structure
+<h3 class="header">Minor Side-Quests and Small Arena Level Design</h3>
 
 ![title-card](./images/ghost-of-tsushima/cost-of-iron/title.png){: .post-image}
 
 "The Cost of Iron", a quest which can be completed in the first act showcases a lot of the qualities of a "minor side-quest". It's short with a self-contained narrative, it offers a few low-impact rewards, and its completion is entirely optional (and is presented as such).  
 
-You start of at the initial way-point, a hut sheltering a group of merchants who unveil the story of an iron mark possessed by another local merchant. The mark, they say, enables its carrier to travel safely among Mongols. Your goal is to find this local merchant and the iron mark he possesses.
+You start off at the initial way-point, a hut sheltering a group of merchants who unveil the story of an iron mark possessed by another local merchant. The mark, they say, enables its carrier to travel safely among Mongols. Your goal is to find this local merchant and the iron mark he possesses.
 
 ![tracks](./images/ghost-of-tsushima/cost-of-iron/tracks.png){: .post-image}
 
-A brief "tracking" style progression ensues --> investigate the scene that the merchants point you towards, fight some Mongols, return to the merchants to find them dead/dying, track the killers, kill them, rescue the merchant. Done.
+A brief "tracking" style progression ensues which leads the player to investigate the scene that the merchants spoke of, fight some Mongols, return to the merchants to find them dead/dying, track the killers, kill them, and finally rescue the merchant.
 
-This progression, from listening to merchants then to rescuing one from the Mongols is a pretty typical minor side quest in both narrative and gameplay progression.  
+This progression--investigate, track, kill--is a pretty typical minor side quest in both narrative and gameplay progression.  
 
 - The narrative is simple and only needs the context of the game's central plot point (Mongols have invaded Tsushima and are wrecking havoc across the land) to be explained.
 - The story has a singular motive and doesn't appear to have implications beyond itself (The iron mark does not change gameplay, the rescued merchant is not seen again).
   - The player can choose to ignore this mission and there isn't a lingering sense of guilt or unfinished business because the plight and reward for completion are almost trivial compared to the stake's of the main mission or major side-quests.  
-
-No promise of a reward is made by the NPC who initiates the quest. So the main motivation for completion are the few rewards promised by the mission info (usually supplies or some material needed for upgrades) in the start menu or just player experience (legend growth, in terms of the game's largely abstracted leveling mechanic).  
+- No promise of a reward is made by the NPC who initiates the quest. So the main motivation for completion are the few rewards promised by the mission info (usually supplies or some material needed for upgrades) in the start menu or just player experience (legend growth, in terms of the game's largely abstracted leveling mechanic).  
 
 The progression of gameplay is generally pretty formulaic in minor side-quests and, with some slight variations, can be illustrated as such:  
 
@@ -61,45 +59,78 @@ The progression of gameplay is generally pretty formulaic in minor side-quests a
 This, as a general template, makes up a majority of minor side-quests structures. Variations are not necessarily in the directional flow but, at times, in the order (after the initial way-point) and in the repetition of certain gameplay blocks. Some will have more than one tracking segment; some will have multiple fights; sometimes the fight interrupts another segment; sometimes there is no fight at all.  
 But all of them are self-contained. They start and end within one mission.  
 
-This is a common side-quest formula, used widely with some variations across games with similar high-level design systems (The Witcher 3, Horizon Zero Dawn, Spiderman...etc, etc.)
+This is a common side-quest formula, used widely with some variations across games with similar high-level design systems (The Witcher 3, Horizon Zero Dawn, Spiderman...etc, etc.).  
 
+GoT does a good job of letting the player know that minor side-quests are optional. Many games that implement a similar structure can be consumed by what eventually becomes a task list of independent and irrelevant missions. Assassin' Creed Odyssey, for example, comes to mind as a game where the minor side-quests eclipse everything, and progressing in that game is a matter of sieving through every call to action, no matter its relative importance.  
 
-#### Minor Side-Quest Level Design and "Arenas"
+GoT, I think, works largely because of its abstracted leveling system. Without the promise of a numeric exp advantage (though there is the reward of slight/moderate legend growth, which is the same thing), I never found myself grinding out these side-quests in order to level up. I played through them because they were there and because I didn't feel like committing myself to a main quest or major side-quest. Minor side-quests were also nice to have in reserve in case I wanted to try out a new weapon or skill-tree enhancement. 
+
+<h2 class="header main">Level Design and "Arenas"</h2>
 
 ![entry](./images/ghost-of-tsushima/cost-of-iron/entry.png){: .post-image}
 
-I'm sure the developers have a specific term for "combat areas", but I'll be using "arena."  
+I'm sure the developers have a specific term for the stealth/combat-centric spaces throughout Tsushima, but I'll be using the term "arena."  
 
-An arena is a contained area with enemies, obstacles, and a central objective. Arenas generally have the space for straightforward combat or the layout for and enemy positioning for a stealth approach (tall grass, houses, and other places to hide). Arenas generally have small rewards and ammo refills peppered throughout (arrows, kunai, supplies, etc.).  
+An arena is a contained area with enemies, obstacles, and a central objective (contained meaning bordered by mountains or fortress walls). Arenas generally have the space for straightforward combat or the layout and enemy positioning for a stealth approach (tall grass, houses, and other places to hide). Arenas generally have small rewards and ammo refills peppered throughout (arrows, kunai, supplies, etc.).  
 
-Camps, forts, captive villages are all "arenas" of different scales, and they can generally be conquered in a variety of ways. Larger spaces, which are the focus of key missions are often a composition of multiple arenas. Castle Kaneda, for instance, is composed of a few medium-sized spaces filled with its own set of enemies, conquered linearly but with variation at the arena level.  
+Camps, forts, captive villages are all "arenas" of different scales, and they can generally be conquered in a variety of ways. Larger spaces, which are the focus of key missions are often a composition of multiple arenas. Castle Kaneda (in the mission ending Act I), for instance, is composed of a few medium-sized arenas, conquered linearly but with variations at the individual arena level.  
 
-Continuing with the "Cost of Iron" sidequest, towards the end of the minor side-quest structure the trail empties into a small arena. The place where the trial empties Jin, is one one of the smallest types of arenas (excluding patrol squads that Jin finds while traversing Tsushima).
+Continuing with the "Cost of Iron" sidequest, towards the end of the mission, the trail empties into a small space flanked by mountains and woods. The place where the trail empties Jin, is one one of the smallest types of arenas (excluding patrol squads that Jin finds while traversing Tsushima).
 
 
 ![overview](./images/ghost-of-tsushima/cost-of-iron/overview.png){: .post-image}
 
-#### Mythical Side-Quests
+This simplified and definitely not poorly drawn layout of the The Cost of Iron's ending arena demonstrates some key aspects of arena level design. Oftentimes in GoT, it is the enemy placement and level design that influences the gameplay choices/strategies made by the player. Certain missions will sway to the extremes of either side of the spectrum to strong-arm the player into a specific style of approach.  
 
+#### The Cost of Iron Arena
+![layout](./images/ghost-of-tsushima/cost-of-iron/layout.png){: .post-image}  
 
-## Narrative Structure
+The game empties Jin at the bottom of this arena. When Jin enters an arena, he is--in most cases--placed safely on the perimeter, either with an altitude advantage or in a safe area such as a field of tall grass. In general, safe, easily-traversable areas surround arenas. This means that players can plan a means of attack without fully committing to one approach from the start.  
 
-3 Acts
+"Standoff" prompts are at every key entrance to an arena. I'm not sure if these are locational triggers or if their appearance is determined by an enemy's detection radius. Nonetheless, emptying a player into an arena with a standoff entry-point gradates the player into the combat/stealth gameplay block. Along with some accompanied dialogue from Jin and visual triggers like fire smoke, the standoff prompt creates a clear indication that the player has entered into an arena. The focus is now combat.  
+
+Next to these entrypoints, there are usually a good number of safe spaces for the player to explore or survey the area. Outlying enemies are placed next to these safe areas, and they are generally alone so that they can be dispatched with little risk in a number of ways as the player moves closer towards the objective point and farther from safe areas. 
+
+A larger number of enemies guard the central objective and they often have patrol patterns--though they can usually be observed from any of the safe points within an arena. Most arenas will have at least one grouping of enemies where the enemy placement forces choice onto the player. In the case of The Cost of Iron, two enemies sit facing each other, making a stealth approach inviable (unless the player's unlocked the chain assassinate skill). Ranged weapons solve this problem, but it'll throw the arena into a state of panic which will upset, if only briefly, any existing patrol patterns.
+
+One of my main complaints about arenas is that these patrol patterns generally seem a little too convenient. Patrols tend to not cover each other. Isolated enemies are often looking at a wall or into a corner, which is so trivial that one can question why they even exist. Some patience is required but once this general system is understood, whole camps can be destroyed in stealth with little risk of detection. Some of this, of course, stems from the simplicity of the AI (a whole writeup on its own), but I think more dynamic patrol patterns could've helped a lot with making stealth more interesting and fulfilling.  
+
+Creating slightly more dynamic patrol patterns could've led into more complex situations and forced harder choices onto the player. For example (and this is simple, and probably has flaws of its own), how about patrol patterns where stalking for a kill leads a player deeper into the camp, which then limits the plan of attack as the player is now in the center of an arena, rather than perched on the perimeter with all the advantage. Perhaps even making the central objective's location less obvious could create a sense of unease and would necessitate exploration.  
+
+GoT isn't totally deprived of interesting stealth segments. In one of Yuna's sidequest missions "Silent Death", Jin has to sneak into a camp and kill three slavers, but their exact location within the camp is not shown, which means the player has to fully wander and explore the camp. And though this mission is largely simplified by the two guiding parameters of "Don't kill the guards" and "Don't be seen", it does represent another facet of how stealth __could've__ operated in GoT. Simply hiding the objective location added a layer of strategy and tension not present in the general stealth system. And for me, stealth in most games is largely about these two concepts--strategy (creating elaborate death traps and planning a path of assassination) and tension (detection and risk at executing any action).
+
+<!-- #### Mythical Side-Quests -->
+
+<h2 class="header main">Narrative Structure - [WIP]</h2>
+
+GoT's has a 3-act structure, and it makes this narrative division and progression known to the player. While the game may wind and tangent across multiple side-stories, the linear progression of Jin's story is a constant guiding force on the game.
+
+<h3 class="header">Act 1 - Starting from Scratch</h3>
+
+![act-one](./images/ghost-of-tsushima/act-one.png){: .post-image}  
+
+GoT starts at the battle of Komoda beach, the entry point for the mongol invasion. Jin fights alongside other samurai in defense of the coasts, but they fail, and in the fallout Jin is rescued by Yuna (a local thief).  
+
+The intro alone does an incredible job at setting the tone for the game. The main piece of exposition needed to set the game in motion is the mongol invasion, and allowing the player to participate in that chunk of story provides clear motivation. Visuals alone provide scale. The writing is strong and delivered well by the voice actors (I played with the Japanese voices and English subtitles).  
+
+From here, the first act opens up the game and the player is free to explore or dive into major side-quests. This act (which is where a bulk of my playtime was spent) sets up most of the major side characters. The major side characters are essential to the main story. They feel developed and of the world, yet exploring their stories is rarely obstructive to the player.  
+
+The intro also sets up the main internal dichotomy for Jin (honor vs. survival). At first, Jin is hesitant to use any form of assassination to dispatch his enemies, claiming it goes against the samurai code of honor. But the first act does the bulk of work in greying this area for Jin as multiple missions are completed only through the use of stealth. This struggle is constantly harkened back to as Jin's reputation grows--mainly through flashbacks. At first this felt forced, like a thin layer to add some ethical matter onto gameplay, but the indirect narrative feedback, I believe, was intentional, since this mainly sets the groundwork for much stronger story beats in later acts.  
+
+<h3 class="header">Act 2 - A United Force</h3>
+
+![act-two](./images/ghost-of-tsushima/act-two.png){: .post-image}  
+
+<h3 class="header">Act 3 - Becoming the Ghost</h3>
+
+![act-three](./images/ghost-of-tsushima/act-three.png){: .post-image}  
+
 
 [SCRATCHPAD]
-
 One of the interesting dichotomies of the game is Jin's adherence to his samurai code coming up against the pragmatic course of stealth needed to dispatch larger groups.
 The game has Jin struggle with this relationship, but as a player, I didn't really care. The story and weight of this 'code' was conveyed, but the game really only had the fight with the mongol leader in the beginning to demonstrate the cons of honorable fighting in the beginning, and that scripted loss felt rather telegraphed.
 
 Sections:
-  - Anatomy of sidequest
-    - Mythical sidequest
-      - Crazy plot centered around the promise of bad-ass reward
-      - Intro does a great job of giving player motive and purpose 
-    - Trivial sidequest
-  - Level design anatomy / recreate
-    - "The Cost of Iron"
-      - Tracking down a merchant in supposed possession of a iron that allows its carrier to travel safely amongst Mongols
   - Narrative exposition
     - Introduction of "Ghost" mechanics are usually followed by flashback where Jin's upbringing contrasts new skill
 

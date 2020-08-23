@@ -35,6 +35,12 @@ body {
     margin-right: auto;
     display: block;
   }
+  .header {
+    text-align: center;
+    &.main {
+      text-decoration: underline;
+    }
+  }
 }
 
 // Includes Styles
@@ -49,4 +55,6 @@ body {
   }
 }
 
-
+.index-list-wrapper {
+  padding: 10px 0 0 0;
+}
