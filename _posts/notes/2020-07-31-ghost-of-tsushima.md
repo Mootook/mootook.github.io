@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Ghost of Tsushima
+title: Ghost of Tsushima - Level Design and the Structure of a Side-Quest
 date: Fri Jul 31 00:32:04 PDT 2020
 category: notes
 permalink: /notes-ghost-of-tsushima
+active: true
 ---
-<h1 class="header main">Ghost of Tsushima [WIP]</h1>
+<h1 class="header main">Ghost of Tsushima</h1>
 
+{% comment %}
 <h2 class="header main">Cinematic Visuals - [WIP]</h2>
 Most aspects of GoT seem in service of its visual style (Akira Kurosawa films)
 - No number on leveling up (pros and cons)
@@ -18,7 +20,7 @@ Most aspects of GoT seem in service of its visual style (Akira Kurosawa films)
 Favorite thing about GoT is the subtle 'leveling up', the game allows for. There's a skill tree, but the only indication of experience or player level is the white icon that fills up after missions. Progression feels organic, challenges seem aspirational and not impossible, flush with both the narrative and gameplay.
 
 <h2 class="header main">Combat - [WIP]</h2>
-
+{% endcomment %}
 
 <h2 class="header main">Side-Quests</h2>
 
@@ -99,9 +101,8 @@ Creating slightly more dynamic patrol patterns could've led into more complex si
 
 GoT isn't totally deprived of interesting stealth segments. In one of Yuna's sidequest missions "Silent Death", Jin has to sneak into a camp and kill three slavers, but their exact location within the camp is not shown, which means the player has to fully wander and explore the camp. And though this mission is largely simplified by the two guiding parameters of "Don't kill the guards" and "Don't be seen", it does represent another facet of how stealth __could've__ operated in GoT. Simply hiding the objective location added a layer of strategy and tension not present in the general stealth system. And for me, stealth in most games is largely about these two concepts--strategy (creating elaborate death traps and planning a path of assassination) and tension (detection and risk at executing any action).
 
-<!-- #### Mythical Side-Quests -->
 
-<h2 class="header main">Narrative Structure - [WIP]</h2>
+<h2 class="header main">Narrative Structure</h2>
 
 GoT's has a 3-act structure, and it makes this narrative division and progression known to the player. While the game may wind and tangent across multiple side-stories, the linear progression of Jin's story is a constant guiding force on the game.
 
@@ -119,13 +120,36 @@ The intro also sets up the main internal dichotomy for Jin (honor vs. survival).
 
 <h3 class="header">Act 2 - A United Force</h3>
 
-![act-two](./images/ghost-of-tsushima/act-two.png){: .post-image}  
+![act-two](./images/ghost-of-tsushima/act-two.png){: .post-image}
 
-<h3 class="header">Act 3 - Becoming the Ghost</h3>
+The second act opens up more of the map and the sidequest availability. At this point I felt pretty comfortable in the game's systems and mechanics (Ryuzo was a good gatekeeper for making sure of this) that exploring the island became more enjoyable. I could dismantle entire Mongol camps I came across with an ever-growing arsenal of tools and a stronger command of the skill tree. Exploration took up more time, as I was no longer worried about running into Mongol patrols or straw hat warriors.
 
-![act-three](./images/ghost-of-tsushima/act-three.png){: .post-image}  
+As for the narrative, the second act builds up a lot of the tension started by the first. Missions are less about Jin finding his footing and more about dismantling Mongol strongholds, so in that regard, it's neat that the narrative build-up aligns with the need to present the player with greater challenges. On the flip side however, this heightened tension made all minor side-quests seem pointless, and starting from the second act, I rarely took the time to interact with villager speech bubbles or distressed travels as I explored.  
+
+The second act also deepens Jin's dichotomy between his samurai code of ethics and his rising popularity as the "Ghost," as word of his brutal tactics spread across the island. This is largely possible because of Lord Shimura's entrance into the main story. His sheer presence is a much stronger marker of where Jin started than the first act's occasional flashbacks or Jin's internal monologues.  
 
 
+A great deal of this act is also devoted to aligning the abstracted level mechanic (Legend growth) with contextual, in-world feedback. In regards to the central story, this creates the wedge between Lord Shimura and Jin. Yet other NPCs begin reacting differently to Jin's presence as the story progresses. NPCs often revel in Jin's presence, asking him to confirm if he actually is the ghost. This simple system contributes substantially to Jin's main story arc and deepens the sense of growth for the player. Even though only key missions directly progress the central story, progressing as a player seems to directly and positively impact the world and its people.  
+
+This legend growth culminates towards the end of Act II with the Seige of Yarikawa, a power-trip of a battle that brings together all the different gameplay aspects of combat and stealth, combines it with the narrative feedback of other warriors being inspired by the player's success in the battle, and is finalized with a brutal addition to the skill-tree. It's a pretty powerful mission that got me pretty committed to the central plot and to seeing Jin succeed as the Ghost.  
+
+<h3 class="header">Act 3 - Leading as The Ghost</h3>
+
+![act-three](./images/ghost-of-tsushima/act-three.png){: .post-image}
+
+Act 3 represents a low point for Jin, a feeling that all is lost. His Uncle and by extension the forces fighting the Mongol invasion have turned against Jin. Yet most of the allies Jin has amassed thus far stay by his side as he flees north.  
+
+The final act is largely about tieing up things, providing resolutions to the numerous narratives presented and explored up to this point. All of the major side characters now have their final missions available for completion.  
+
+Unlike previous chapters in the story, this one does not waste a lot of time or attempt to distract your attention. Tensions are high and the path forward is clear. Aside from the major side quests, I did not have much motivation to explore this final portion of the map or waste time with minor side quests. Part of this is because for a while, much the map is limited while Jin is an outlaw, but also the game does a good job here of narrowing your attention. By now, most of the impetus in the game has come from the characters -- Sensei Ishikawa, Yuna, Lasy Masako -- as well as Jin's struggle with his Samurai upbringing and his Uncle.  
+
+Initially the dichotomy presented to the player, Jin's hesitation in adopting dishonorable tactics, was plastered onto small interludes in gameplay, but the third act presents this struggle as the central point of contention for the game. And by extension, this struggle becomes the main conflict of the stroy. The game's central movement is the Mongol invasion and the growing fight to resist, but the perpetual undercurrent for the narrative is this struggle between Jin and his Uncle.  
+
+It explains why, in the end, the fight with the Khan feels unsatisfying and the story unresolved. The final duel with Uncle Shimura and then allowing the player to choose to kill or spare him is the proper and deserved finale. It demonstrates that the game was always trying to present a story about principles and family. These themes are explored even further in all of the major side-quests.  
+
+It takes all three acts for this core narrative impact to build, and personally, I found it effective, like it had snuck up on me. The game presented itself as a rather shallow revenge story in a time of war. It had some internal struggles introduced without much elegance, but oddly enough, I think it was necessary: to place those ideas in the back of the players mind so that they could be fully unpacked in numerous ways across dozens of missions. 
+
+{% comment %}
 [SCRATCHPAD]
 One of the interesting dichotomies of the game is Jin's adherence to his samurai code coming up against the pragmatic course of stealth needed to dispatch larger groups.
 The game has Jin struggle with this relationship, but as a player, I didn't really care. The story and weight of this 'code' was conveyed, but the game really only had the fight with the mongol leader in the beginning to demonstrate the cons of honorable fighting in the beginning, and that scripted loss felt rather telegraphed.
@@ -133,9 +157,8 @@ The game has Jin struggle with this relationship, but as a player, I didn't real
 Sections:
   - Narrative exposition
     - Introduction of "Ghost" mechanics are usually followed by flashback where Jin's upbringing contrasts new skill
-
+{% endcomment %}
 #### Resources
-- https://www.youtube.com/watch?v=doaQC-S8de8
-- https://www.polygon.com/2020/7/23/21333631/ghost-of-tsushima-kurosawa-films-samurai-japan-abe-politics
-- https://ew.com/gaming/ghost-of-tsushima-akira-kurosawa-estate-cinematic-mode/
-- https://www.wired.com/story/ghosts-of-tsushima-essay/
+- [Akira Kurosawa - Composing Movement, Every Frame a Painting](https://www.youtube.com/watch?v=doaQC-S8de8)
+- [Ghost of Tsushima, Kurosawa, and the political myth of the samurai, Polygon](https://www.polygon.com/2020/7/23/21333631/ghost-of-tsushima-kurosawa-films-samurai-japan-abe-politics)
+- [Ghosts of Tsushima Isn't Samurai Cinema—It's a Popcorn Flick, Wired](https://www.wired.com/story/ghosts-of-tsushima-essay/)

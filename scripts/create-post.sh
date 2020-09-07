@@ -19,6 +19,7 @@ set_jekyll_info() {
   echo "date: $RAW_DATE" >> $FILE
   echo "category: $POST_TYPE" >> $FILE
   echo "permalink: /$POST_TYPE-$TITLE" >> $FILE
+  echo "active: true" >> $FILE
   echo "---" >> $FILE
 }
 

@@ -4,6 +4,7 @@ title: Horizon Zero Dawn
 date: Sun Jul  5 12:37:21 PDT 2020
 category: notes
 permalink: /notes-horizon-zero-dawn
+active: false
 ---
 
 ## Horizon Zero Dawn
