@@ -6,6 +6,9 @@
 			{% include header.html %}
 			{% include navbar.html %}
 			<div class="post-content-wrapper">
+				{% if page.category != "work" %}
+					{% include disclaimer.html %}
+				{% endif %}
 				{{ content }}
 			</div>
 			
