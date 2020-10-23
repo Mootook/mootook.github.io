@@ -3,6 +3,7 @@ layout: home
 permalink: /
 ---
 <div class='index-list-wrapper'>
-<!-- {% include casestudieslist.html %} -->
   {% include noteslist.html %}
+  <br>
+  {% include work.html %}
 </div>
