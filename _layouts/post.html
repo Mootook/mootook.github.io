@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en-US">
   {% include head.html %}
-  <body>
-    {% include navbar.html %}
-    <div class="wrapper">
-      {% include disclaimer.html %}
-      <div class='post-content-wrapper'>
-        {{ content }}
-      </div>
-    </div>
-    {% include footer.html %}
+  <body class="d-flex h-100 flex-column">
+    <main role="main" class="flex-shrink-0 container">
+			{% include header.html %}
+			{% include navbar.html %}
+			<div class="post-content-wrapper">
+				{{ content }}
+			</div>
+			
+		</main>
+		{% include footer.html %}
   </body>
 </html>

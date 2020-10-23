@@ -1,5 +1,5 @@
 ---
-layout: work-layout
+layout: post
 title: "Kast - Kast Player"
 date: Sun Sep 20 13:20:27 PDT 2020
 category: work

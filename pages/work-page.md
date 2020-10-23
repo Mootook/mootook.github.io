@@ -1,9 +1,7 @@
 ---
 layout: home
-permalink: /
+permalink: /work
 ---
 <div class="home-page-content">
-  {% include noteslist.html %}
-  <br>
   {% include work.html %}
 </div>

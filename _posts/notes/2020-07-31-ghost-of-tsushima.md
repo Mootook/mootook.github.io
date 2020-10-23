@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Ghost of Tsushima - Level Design and the Structure of a Side-Quest
+title: Ghost of Tsushima - Level Design, Story, and Side-Quest Structure
 date: Fri Jul 31 00:32:04 PDT 2020
 category: notes
 permalink: /notes-ghost-of-tsushima
 active: true
 ---
-<h1 class="header main">Ghost of Tsushima</h1>
+<h1 class="title">Ghost of Tsushima:</h1>
+<h1 class="title">Level Design, Story, and Side-Quest Structure</h1>
 
 {% comment %}
-<h2 class="header main">Cinematic Visuals - [WIP]</h2>
+<h2>Cinematic Visuals - [WIP]</h2>
 Most aspects of GoT seem in service of its visual style (Akira Kurosawa films)
 - No number on leveling up (pros and cons)
 - Camera positioning
@@ -19,10 +20,10 @@ Most aspects of GoT seem in service of its visual style (Akira Kurosawa films)
 
 Favorite thing about GoT is the subtle 'leveling up', the game allows for. There's a skill tree, but the only indication of experience or player level is the white icon that fills up after missions. Progression feels organic, challenges seem aspirational and not impossible, flush with both the narrative and gameplay.
 
-<h2 class="header main">Combat - [WIP]</h2>
+<h2>Combat - [WIP]</h2>
 {% endcomment %}
 
-<h2 class="header main">Side-Quests</h2>
+<h2>Side-Quests</h2>
 
 A great chunk of GoT is composed of episodic missions that, for the most part, are tangential to the main story but provide incentive through material rewards (crafting supplies, armor upgrades), experience to level up, and narrative arcs with supporting characters.
 
@@ -49,10 +50,10 @@ A brief "tracking" style progression ensues which leads the player to investigat
 
 This progression--investigate, track, kill--is a pretty typical minor side quest in both narrative and gameplay progression.  
 
-- The narrative is simple and only needs the context of the game's central plot point (Mongols have invaded Tsushima and are wrecking havoc across the land) to be explained.
-- The story has a singular motive and doesn't appear to have implications beyond itself (The iron mark does not change gameplay, the rescued merchant is not seen again).
-  - The player can choose to ignore this mission and there isn't a lingering sense of guilt or unfinished business because the plight and reward for completion are almost trivial compared to the stake's of the main mission or major side-quests.  
-- No promise of a reward is made by the NPC who initiates the quest. So the main motivation for completion are the few rewards promised by the mission info (usually supplies or some material needed for upgrades) in the start menu or just player experience (legend growth, in terms of the game's largely abstracted leveling mechanic).  
+* The narrative is simple and only needs the context of the game's central plot point (Mongols have invaded Tsushima and are wrecking havoc across the land) to be explained.
+* The story has a singular motive and doesn't appear to have implications beyond itself (The iron mark does not change gameplay, the rescued merchant is not seen again).
+    * The player can choose to ignore this mission and there isn't a lingering sense of guilt or unfinished business because the plight and reward for completion are almost trivial compared to the stake's of the main mission or major side-quests.  
+* No promise of a reward is made by the NPC who initiates the quest. So the main motivation for completion are the few rewards promised by the mission info (usually supplies or some material needed for upgrades) in the start menu or just player experience (legend growth, in terms of the game's largely abstracted leveling mechanic).  
 
 The progression of gameplay is generally pretty formulaic in minor side-quests and, with some slight variations, can be illustrated as such:  
 
@@ -67,7 +68,7 @@ GoT does a good job of letting the player know that minor side-quests are option
 
 GoT, I think, works largely because of its abstracted leveling system. Without the promise of a numeric exp advantage (though there is the reward of slight/moderate legend growth, which is the same thing), I never found myself grinding out these side-quests in order to level up. I played through them because they were there and because I didn't feel like committing myself to a main quest or major side-quest. Minor side-quests were also nice to have in reserve in case I wanted to try out a new weapon or skill-tree enhancement. 
 
-<h2 class="header main">Level Design and "Arenas"</h2>
+<h2>Level Design and "Arenas"</h2>
 
 ![entry](./images/ghost-of-tsushima/cost-of-iron/entry.png){: .post-image}
 
@@ -85,7 +86,7 @@ Continuing with the "Cost of Iron" sidequest, towards the end of the mission, th
 This simplified and definitely not poorly drawn layout of the The Cost of Iron's ending arena demonstrates some key aspects of arena level design. Oftentimes in GoT, it is the enemy placement and level design that influences the gameplay choices/strategies made by the player. Certain missions will sway to the extremes of either side of the spectrum to strong-arm the player into a specific style of approach.  
 
 #### The Cost of Iron Arena
-![layout](./images/ghost-of-tsushima/cost-of-iron/layout.png){: .post-image}  
+![layout](./images/ghost-of-tsushima/cost-of-iron/drawn-layout.png){: .post-image}  
 
 The game empties Jin at the bottom of this arena. When Jin enters an arena, he is--in most cases--placed safely on the perimeter, either with an altitude advantage or in a safe area such as a field of tall grass. In general, safe, easily-traversable areas surround arenas. This means that players can plan a means of attack without fully committing to one approach from the start.  
 
@@ -102,7 +103,7 @@ Creating slightly more dynamic patrol patterns could've led into more complex si
 GoT isn't totally deprived of interesting stealth segments. In one of Yuna's sidequest missions "Silent Death", Jin has to sneak into a camp and kill three slavers, but their exact location within the camp is not shown, which means the player has to fully wander and explore the camp. And though this mission is largely simplified by the two guiding parameters of "Don't kill the guards" and "Don't be seen", it does represent another facet of how stealth __could've__ operated in GoT. Simply hiding the objective location added a layer of strategy and tension not present in the general stealth system. And for me, stealth in most games is largely about these two concepts--strategy (creating elaborate death traps and planning a path of assassination) and tension (detection and risk at executing any action).
 
 
-<h2 class="header main">Narrative Structure</h2>
+<h2>Narrative Structure</h2>
 
 GoT's has a 3-act structure, and it makes this narrative division and progression known to the player. While the game may wind and tangent across multiple side-stories, the linear progression of Jin's story is a constant guiding force on the game.
 
