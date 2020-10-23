@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Life is Strange - Sounds and Connection
-date: Mon Sep  7 12:35:10 PDT 2020
+date: Mon Nov 12 12:35:10 PDT 2018
 category: notes
 permalink: /notes-life-is-strange
 active: true
