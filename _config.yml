@@ -28,8 +28,18 @@ github_profile: https://github.com/Mootook
 email: alexanderkmutuc@gmail.com
 linkedin: https://www.linkedin.com/in/alexander-mutuc/
 
+# Posts
+categories: notes work
 
-categories: design engineering notes work
+# Collections
+collections_dir: collections
+collections:
+  game_development:
+    title: Game Development
+  game_design:
+    title: Game Design
+  misc:
+    title: Misc
 # Build settings
 plugins:
   - jekyll-feed

@@ -4,6 +4,7 @@ title: ai-detection
 date: Sat Jul  4 12:38:27 PDT 2020
 category: design
 permalink: /design-ai-detection
+active: false
 ---
 
 # Design - Ai Detection
