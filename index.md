@@ -6,6 +6,6 @@ permalink: /
   {% include noteslist.html %}
   <br>
   {% include work.html %}
-	<br>
-	{% include projectslist.html %}
+	<!-- <br> -->
+	<!-- {% include projectslist.html %} -->
 </div>
