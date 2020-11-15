@@ -6,7 +6,7 @@ if [[ $POST_TYPE == "" || $TITLE == "" ]]; then
   exit 0
 fi
 
-BASE_DIR="$HOME/Projects/mootook.github.io/_posts"
+BASE_DIR="$HOME/Projects/mootook.github.io/collections/_posts"
 cd=$BASE_DIR
 RAW_DATE=$(date)
 DATE=$(date +'%Y-%m-%d')
