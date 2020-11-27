@@ -1,18 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
   {% include head.html %}
   <body class="d-flex h-100 flex-column">
     <main role="main" class="flex-shrink-0 container">
-			{% include header.html %}
-			{% include navbar.html %}
-			<div class="post-content-wrapper">
-				{% if page.category != "work" %}
-					{% include disclaimer.html %}
-				{% endif %}
-				{{ content }}
-			</div>
-			
-		</main>
-		{% include footer.html %}
+      {% include header.html %} {% include navbar.html %}
+      <div class="post-content-wrapper">
+        {% if page.category != "work" and page.category != "misc" %} {% include
+        disclaimer.html %} {% endif %} {{ content }}
+      </div>
+    </main>
+    {% include footer.html %}
   </body>
 </html>
