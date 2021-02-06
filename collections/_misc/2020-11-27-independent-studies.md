@@ -7,6 +7,8 @@ permalink: /misc-independent-studies
 active: true
 ---
 
+### Independent Studies
+
 I decided mid 2020 to start plugging in some of my computer science knowledge gaps.
 
 So after a few months of watching tons of unrelated YouTube playlists and failing to work through a few textbooks, I found [OSSU](https://github.com/ossu/computer-science) (Open Source Scoiety University) on GitHub.
