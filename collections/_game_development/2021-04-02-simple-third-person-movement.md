@@ -37,12 +37,6 @@ public class PlayerInputController : MonoBehaviour
     private Vector2 _movement;
     public Vector3 nextMovement;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     private void Update()
     {
@@ -80,10 +74,21 @@ all of that to produce the following.
 
 !! TODO: Insert GIF
 
-Wow, how fantastic. They move, diagonals are incorrect, and the main issue concerns the incorrect rotation when the camera moves independently of the player. Forward or "W", in this case, always
+Wow, how fantastic. They move, diagonals are incorrect, and there isn't any rotation.
+
+Getting the rotation involves some trigonometry. The Brackey's and Sebastion Lague videos (resources) 
+have pretty good explanations, but the gist is:
+
+```c#
+
+float targetAngle = Mathf.Atan2(_movement.x, _movement.y) * Mathf.Rad2Deg;
+
+```
+
+and the main issue concerns the incorrect rotation when the camera moves independently of the player. Forward or "W", in this case, always
 translates to the original rotation's forward, so even when the camera rotated, the character controller was unaware.
 
-Brackey's video has a solution for this:
+There's a pretty comm
 
 ```c#
 
