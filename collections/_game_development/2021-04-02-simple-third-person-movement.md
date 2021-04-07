@@ -113,7 +113,7 @@ After that I added the handling of gravity and jumping.
 // playerlocomotioncontroller.cs
 void Update()
 {
-    Vector3 movement = _movement.nextMovement;
+    Vector3 movement = _input.nextMovement;
     UpdateVerticalVelocity();
     // apply the vertical movement to our movement vector
     movement += _verticalSpeed * Vector3.up * Time.deltaTime;
@@ -128,7 +128,7 @@ private void UpdateVerticalVelocity()
         // stick the player to the ground with a proportion
         // of the downward force applied by _gravity
         _verticalSpeed = -_gravity * _stickingGravityProportion;
-        if (_movement.isJumping)
+        if (_input.isJumping)
             _verticalSpeed = _jumpHeight;
     }
     else
@@ -142,4 +142,32 @@ The Unity character controller has a nifty isGrounded variable that can determin
 account for gravity, so it has to manually supplied to the movement vector in the call to move.
 Notice that jumping, while read from the PlayerInputController.cs, is only allowed if the character is grounded, preventing double jumps.
 
-Next to add is animations!
+Now that basic movement, jumping, and gravity were all functioning, I wanted to start adding animations, or at least get some rudimentary behaviors down.
+
+After sourcing some animation from Mixamo, I started with a basic animation tree that entered on an idle state and transitioned into a blend tree for "movement". 
+A lot of blend trees I've seen from basic tutorials have the idle state in the locomotion blend tree, but I wanted to keep it separate to make actions like running vs idle jump easier to navigate to and from.
+
+[animator-1](https://i.ibb.co/HXm8rqy/animator-1.png){: .post-image}
+
+While setting up the tree I noticed this odd issue in the animation preview when blending between the jog and spring animations.
+
+!! TODO: Add GIF of animator issue.
+
+After some not so accurate google searches, I realized that the issue was that the animation being fed to the blend tree differed in their lengths. This means that the running animation loop cycle took two steps, while the sprint took four.
+
+I swapped out the animation, and the issue was solved.
+
+Next, I simply got a reference to the animator in the locomotion controller and updated an animation parameter "forwardVelocity" that I created based on the input/movement state.
+
+```c#
+float forwardVelocity = 0.0f;
+if (isMoving)
+    forwardVelocity =  ((_input.isRunning) ? 1 : 0.5f);
+
+_animator.SetFloat(_animForwardVelocity, forwardVelocity, 0.1f, Time.deltaTime);
+```
+
+This also allowed me to move the actual character controller movement logic into the `OnAnimatorMove()` callback.
+Next, was jumping and potentially some more animations within the locomotion blend tree, converting it to 2 dimensions and adding a direction parameter.
+
+
