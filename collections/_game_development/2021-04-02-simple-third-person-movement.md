@@ -76,7 +76,7 @@ public class PlayerLocomotionController : MonoBehaviour
 
 all of that to produce the following.
 
-!! TODO: Insert GIF
+![animator-1](https://i.ibb.co/zGnCDR0/cc-1.gif){: .post-image}
 
 Wow, how fantastic. They move, diagonals are incorrect, and there isn't any rotation.
 
@@ -147,7 +147,7 @@ Now that basic movement, jumping, and gravity were all functioning, I wanted to 
 After sourcing some animation from Mixamo, I started with a basic animation tree that entered on an idle state and transitioned into a blend tree for "movement". 
 A lot of blend trees I've seen from basic tutorials have the idle state in the locomotion blend tree, but I wanted to keep it separate to make actions like running vs idle jump easier to navigate to and from.
 
-[animator-1](https://i.ibb.co/HXm8rqy/animator-1.png){: .post-image}
+![animator-1](https://i.ibb.co/HXm8rqy/animator-1.png){: .post-image}
 
 While setting up the tree I noticed this odd issue in the animation preview when blending between the jog and spring animations.
 
@@ -168,6 +168,26 @@ _animator.SetFloat(_animForwardVelocity, forwardVelocity, 0.1f, Time.deltaTime);
 ```
 
 This also allowed me to move the actual character controller movement logic into the `OnAnimatorMove()` callback.
-Next, was jumping and potentially some more animations within the locomotion blend tree, converting it to 2 dimensions and adding a direction parameter.
+
+
+After the basic movement was down, I began working on the jump ability.
+My original implementation had two possible animations, `jump_idle` and `jump_forward` that were states accessible from the idle and locomotion states in the animator.
+
+![jump-animator-1](https://i.ibb.co/YZKS3xd/original-jump-anim.png){: .post-image}
+
+The code revolving around this implementation, quickly exposed a few issues. The jump startup for the idle animation jump was quite slow, and while I could've resolved this with a quicker animation, I tried hacky method of postponing the actual application of the upwards vector until a unity event from the animation was called that "allowed" the jump.
+Then that conflicted with the locomotion jump animation, which had a different startup time. I also tried coroutines, but similar issues appeared, and the whole implementation felt rather weak to me.
+
+I realized that a lot of publicly distributed character controller's, like Unity's from the asset store, use independent states for the different parts of the animation. A jump for instance, could result in an animation flow along the lines of
+
+jump_prep -> jump_takeoff -> jump_takeoff_2 -> jump_peak -> jump_descend -> jump_descend_2 -> jump_land
+
+And jump_land would sometimes be its own sub-tre with parameters determine the type and speed of the landing.
+Not only did this seem cleaner and more intuitive, it also felt more extensible. As I realized that my character controller couldn't account for just falling without a jump (like walking off a cliff) without some more hacky code.
+
+
+
+
+
 
 
