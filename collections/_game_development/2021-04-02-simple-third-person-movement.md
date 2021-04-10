@@ -186,8 +186,15 @@ And jump_land would sometimes be its own sub-tre with parameters determine the t
 Not only did this seem cleaner and more intuitive, it also felt more extensible. As I realized that my character controller couldn't account for just falling without a jump (like walking off a cliff) without some more hacky code.
 
 
+So the first pass wasn't all that bad:
 
+![jump-animator-2](https://i.ibb.co/Sc34s0s/anim-jump-1.gif){: .post-image}
 
+Definitely quite rough, but I think the grounding for the logic is more sensible. Biggest problem is the landing, which is caused by the `isGrounded` boolean (from the character controller) being set too early. One of the animations in the airborne tree is appying some root motion that is offsetting the model from the character controller, so the landing animation isn't matching when the character actually lands.
 
+![cc-anim-bug](https://i.ibb.co/PCgVPJQ/cc-anim-bug.png){: .post-image}
+
+It's a little easier to see here, where the character is still in the 'airborne' blend tree. 
+Yet the animation for landing lags behind, so the character looks odd when they land.
 
 
