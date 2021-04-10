@@ -181,7 +181,8 @@ Now that basic movement, jumping, and gravity were all functioning, I wanted to 
 
 After sourcing some animation from [Mixamo](https://www.mixamo.com/), I started with a basic animation tree that entered on an idle state and transitioned into a blend tree for "Locomotion".
 
-A lot of blend trees I've seen from basic tutorials have the idle state in the locomotion blend tree, but I wanted to keep it separate to make actions like running vs idle jump easier to navigate to and from. It'd also be nice to treat idle as its own independent state machine in case I wanted to play different idle animations within the "idle" state.
+A lot of blend trees I've seen from basic tutorials have the idle state in the locomotion blend tree, but I wanted to keep it separate to make actions like running vs idle jump easier to navigate to and from.
+It'd also be nice to treat idle as its own independent state machine in case I wanted to play different idle animations within the "idle" state.
 
 <div style="width: 100%; text-align:center;">
     <img style="width:50%; height:50%" src="https://i.ibb.co/HXm8rqy/animator-1.png">
