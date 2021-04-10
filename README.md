@@ -6,8 +6,19 @@ A collection of notes/small demos to showcase projects I've been working. It als
 
 ### Development
 
-Test and run locally:
+#### Prerequisites
+- [Ruby/Jekyll]https://jekyllrb.com/docs/installation/windows/()
 
-```no-lang
+```bash
+# clone the repo, cd
+
+bundle install
+
+# Hot reloads for development
 bundle exec jekyll serve --livereload
 ```
+
+
+Troubleshooting:
+- https://github.com/oneclick/rubyinstaller2/issues/96  
+- https://stackoverflow.com/questions/30682575/unable-to-load-the-eventmachine-c-extension-to-use-the-pure-ruby-reactor 
