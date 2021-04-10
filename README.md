@@ -18,7 +18,6 @@ bundle install
 bundle exec jekyll serve --livereload
 ```
 
-
 Troubleshooting:
 - https://github.com/oneclick/rubyinstaller2/issues/96  
 - https://stackoverflow.com/questions/30682575/unable-to-load-the-eventmachine-c-extension-to-use-the-pure-ruby-reactor 
