@@ -252,11 +252,33 @@ The fix is largely dependent on the animation, a fix likely happening by modifyi
 As of right now this implementation is "good enough", even though it's not that easy to look at, I think it'll serve its purpose well. It's largely an issue of polish (which in my experience often takes just as much time as the initial implementation), and it's for sure something to which I'll come back.
 
 
+### Current State
+
+This, by design, was something I wanted to implement quickly, get a feel for, and iterate upon in the future.
+
+The first iteration [05.11.2021] includes basic 3D locomotion, jumping, and falling.
+
+<div style="width: 100%; text-align: center">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/OYi6gO65fJ0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    >
+    </iframe>
+</div>
+
 ### Next Steps 
 
 Possible things I want to add or polish:
 
 - Falling/Landing animation states
+    - https://gamedev.stackexchange.com/questions/162853/how-to-disable-animation-root-motion
+    - https://assetstore.unity.com/packages/3d/animations/movement-animset-pro-14047 
+    - https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D 
 - Double jump
 - Ledge hanging (pull up to ledge)
 - Camera centering and focus (Zelda style z-targeting)
