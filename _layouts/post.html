@@ -5,7 +5,7 @@
     <main role="main" class="flex-shrink-0 container">
       {% include header.html %} {% include navbar.html %}
       <div class="post-content-wrapper">
-        {% if page.category != "work" and page.category != "misc" %} {% include
+        {% if page.category != "work" and page.category != "misc" and page.category != "engineering" %} {% include
         disclaimer.html %} {% endif %} {{ content }}
       </div>
     </main>
