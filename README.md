@@ -7,7 +7,7 @@ A collection of notes/small demos to showcase projects I've been working. It als
 ### Development
 
 #### Prerequisites
-- [Ruby/Jekyll]https://jekyllrb.com/docs/installation/windows/()
+- [Ruby/Jekyll](https://jekyllrb.com/docs/installation/windows/)
 
 ```bash
 # clone the repo, cd
