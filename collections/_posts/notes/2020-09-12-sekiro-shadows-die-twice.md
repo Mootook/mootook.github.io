@@ -44,6 +44,19 @@ The long-arm centipede will test blocking/parrying, for example. Doing pretty mu
 
 Other bosses, generally the larger and more memorable ones, test a combination of these focuses, sometimes all at once and sometimes in varying orders and degrees of attention, bosses like Lady Butterfly, Genichiro Ashina, The Corrupted Monk, and, of course, the Guardian Ape.
 
+The reason I think the Guardian Ape is worth looking into goes beyond the combat system and the core mechanics of Sekiro. It's a memorable boss fight, but why?
+It's not like there's a fundamental alteration in how the game is played. The player has access to many of the same tools at this point in the game as any other, with exception of some passive upgrades and a bigger health bar. It's not the "most difficult", nor is it completed in some unique way.
+While it punctuates a major story beat, so do many other boss fights that didn't stick with me (The Owl, for instance), and while this could generally be reduced to preference, I think a lot of what makes the Guardian Ape unique comes down to a combination of level, story, and combat design.
+
+### Space, Focus, and Purpose
+
+
+
+// guarding something as opposed to bypassing the natural progression (like on a bridge)
+// we're taking from the guardian ape, not trying to get past him.
+// If the guardian ape is so memorable, why isn't the fight with both of them MORE memorable?
+
+
 <h2>I'm sorry I killed your friends earlier</h2>
 
 
