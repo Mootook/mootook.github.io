@@ -16,9 +16,16 @@ active: true
 
 <h2>Intro</h2> 
 
+{% comment %}
+Tone this back on the DS1 comparison.
+Get right into the boss fight. The focus of this piece si the guardian ape, not what makes sekiro a good game.
+Just get straight into it.
+Prefacing it with a lengthy comparison takes away. A bit might be necessary to establish my own context for this article but not a lot.
+{% endcomment %}
+
 Sekiro, like a lot of souls games, is pretty difficult.
 
-And like a lot of articles about overcoming Sekrio, I'll start by saying, the game was not fun for a while, then, after a painful "aha!" moment, it became impossible to put down. Anyone who's stuck with any of the souls games long enough probably knows the feeling well.
+And like a lot of articles about overcoming Sekiro, I'll start by saying, the game was not fun for a while, then, after a painful "aha!" moment, it became impossible to put down. Anyone who's stuck with any of the souls games long enough probably knows the feeling well.
 It's pretty great, realizing that the game balances its small margin for error with a polished and predictable combat system. It makes the games challenging and thus rewarding, memorable and, for players like myself who seek out these sorts of experiences in games, fun.
 In some ways, the game oscillates between a rhythm game and a puzzle. All enemies have telegraphed attacks, and the player will always have at least one answer to each attack. The puzzle is pairing your arsenal of attacks to the enemy's. After that, it's an execution test. 
 
@@ -50,14 +57,20 @@ While it punctuates a major story beat, so do many other boss fights that didn't
 
 ### Space, Focus, and Purpose
 
+One of the things you discover quickly while playing a souls game is that the layout of the level is often an enemy on its own, making you second guess movement, luring you into dead ends while enemies enclose on  you.
+The type of terrain, how narrow, how bright, usually all work in unison with the types of enemies you're pitted against. And rarely are these elements employed to make things easier. Rather areas often enhance the strengths of enemies, bait the player into choke-points so they face numerous enemies, etc.
+
+As Mark Brown puts it in his analysis of DS1:
+
+"The ideal way to play Dark Souls is to move slowly and carefully and fight enemies on one-on-one bouts, where you have lots of room to move, but the level design and enemy placement does everything to mess with this."
+
+And while Sekiro is not Dark Souls -- its deviations in movement and level layout are an analysis of their own -- it inherits this design "principle." 
 
 
-// guarding something as opposed to bypassing the natural progression (like on a bridge)
-// we're taking from the guardian ape, not trying to get past him.
-// If the guardian ape is so memorable, why isn't the fight with both of them MORE memorable?
+
+Because of the verticality afforded to the player in the form of the jump and grappling hook, spaces in Sekiro feel open and wide. 
 
 
-<h2>I'm sorry I killed your friends earlier</h2>
 
 
 {% comment %}
@@ -70,6 +83,9 @@ Notes:
 - Attack variance
 - Combat mechanic context
 - Unpredictability vs Patterened movement
+- guarding something as opposed to bypassing the natural progression (like on a bridge)
+- we're taking from the guardian ape, not trying to get past him.
+- If the guardian ape is so memorable, why isn't the fight with both of them MORE memorable?
 {% endcomment %}
 
 #### Resources
@@ -79,6 +95,8 @@ Notes:
 - [Should Dark Souls Have an Easy Mode](https://www.youtube.com/watch?v=K5tPJDZv_VE&ab_channel=GameMaker%27sToolkit)
 - [Boss Battle Design Vol. 2 - Designing Engaging Boss Fights in Games](https://www.youtube.com/watch?v=o0CKHLumTG0&ab_channel=DesignDoc)
 - [Boss Up: Boss Battle Design Fundamentals and Retrospective](https://www.youtube.com/watch?v=48Ymh4Ge5j8&ab_channel=GDC)
+- [The World Design of Dark Souls](https://www.youtube.com/watch?v=QhWdBhc3Wjc&ab_channel=GameMaker%27sToolkit)
+- [Sekiro vs. Souls](https://www.youtube.com/watch?v=Is4JhZgVRqk&ab_channel=NeverKnowsBest)
 <br/>
 #### Image Credits
 - [https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape](https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape)
