@@ -30,4 +30,4 @@ end
 # gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform? 
 # gem 'eventmachine', '~> 1.2', platform: :ruby
-gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
+# gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
