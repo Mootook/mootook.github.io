@@ -1,6 +1,9 @@
 ---
 title: Almost Katamari Damacy
 date: Sat Apr 14 12:35:41 PDT 2021
+prev:
+    text: Back to Projects
+    link: /projects
 ---
 
 # Almost Katamari

@@ -3,8 +3,8 @@ title: "Sekiro: Shadows Die Twice - The Guardian Ape"
 date: Sat Sep 12 19:02:37 PDT 2020
 category: notes
 prev:
-    text: Go back
-    link: /blog
+    text: Back to Notes
+    link: /notes
 ---
 
 # Sekiro: Shadows Die Twice - The Guardian Ape

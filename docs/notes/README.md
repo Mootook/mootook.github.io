@@ -1,11 +1,10 @@
 ---
 sidebar: false
-home: true
-heroText: null 
-tagline: null
 ---
+# /notes
 
-## /notes
+## Game Design
+
 
 <ArticleCard
   link="/notes/sekiro-shadows-die-twice.md"
@@ -29,20 +28,4 @@ Difficulty, to Miyazaki and thus FromSoftware, was a tool for the designers, a w
   title="Life is Strange - Sounds and Connection"
   date="12 November 2018"
   description="So I recently beat the first Life is Strange (LiS) game…And I actually enjoyed it. It was one of those games that had a very specific spot in my daily routine. It was always nice to play at night, to just sit alone and spend an hour or two in Arcadia Bay. It was effortless and peaceful. "
-/>
-
-## /projects
-
-<ArticleCard
-  link="/projects/katamari.html"
-  title="Recreating Katamari Damacy"
-  date="14 April 2021"
-  description="I've been watching my partner play through on the Nintendo Switch lately. I'd never really played or seen this game, only heard about it as the game where you roll a bunch of stuff into a ball."
-/>
-
-<ArticleCard
-  link="/projects/simple-third-person-movement.html"
-  title="Third Person Movement"
-  date="03 April 2021"
-  description="The third person character controller is a staple in platformers and shooters. While there are many assets for pre-built controllers for quick prototypes, I wanted to try my hand at making one and seeing what went into creating a playable third-person character -- what made it feel responsive or laggy, what range of animations/actions were crucial, and how could I make one that was useful as a base for future extensibility."
 />

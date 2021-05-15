@@ -9,8 +9,9 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   alias: { '@': path.resolve(__dirname, '../../src'), "@styles": path.resolve(__dirname, './styles') },
   themeConfig: {
     navbar: [
-      { text: 'Blog', link: '/blog' },
-      { text: 'Projects', link: '/projects' }
+      { text: '/notes', link: '/notes' },
+      { text: '/projects', link: '/projects' },
+      { text: '/about', link: '/about' }
     ],
     contributors: false,
     lastUpdated: false

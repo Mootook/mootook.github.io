@@ -1,19 +1,25 @@
-
 <script lang="ts" setup>
+import { useRouter } from 'vue-router'
 import { defineProps } from 'vue'
+import type { Router } from 'vue-router'
 
 const props = defineProps<{
   title: string,
   date: string,
+  link: string,
   description?: string
 }>()
+
+const router: Router = useRouter()
+
+const goToArticle = () => router.push(props.link)
 
 </script>
 
 <template>
   <div class="article-card-wrapper">
     <div class="title-wrapper">
-      <h3>{{ title }}</h3>
+      <h3 @click="goToArticle">{{ title }}</h3>
       <div class="title-separator" />
       <span>{{ date }}</span>
     </div>
@@ -21,14 +27,14 @@ const props = defineProps<{
       <p>{{ description }}</p>
     </div>
   </div>
+  <div class="article-separator" />
 </template>
 
 <style scoped lang="scss">
 
 .article-card-wrapper {
   display: grid;
-  grid-template-columns: 12rem 1fr;
-  height: 8rem;
+  grid-template-columns: 14rem 1fr;
   .title-wrapper {
     display: flex;
     flex-direction: column;
@@ -44,7 +50,7 @@ const props = defineProps<{
       transition: color 0.25s;
     }
     h3:hover {
-      color: red;
+      color: $accentColor-hover;
     }
     span {
       font-size: 0.8rem;
@@ -57,15 +63,20 @@ const props = defineProps<{
     }
   }
   .snippet-wrapper {
-    padding-left: 2rem;
+    margin: 0 0 1rem 2rem;
     overflow: hidden;
-    margin: unset;
     display: -webkit-box;
     -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
     p {
       margin: 0;
     }
   }
+}
+.article-separator {
+  width: 100%;
+  height: 1px;
+  margin: 1rem 1rem 1rem 0.5rem;
+  background-color: lightgray;
 }
 </style>
