@@ -54,7 +54,7 @@ So first was getting movement down, as that seemed simplest. If the two joystick
 
 I set up Unity's new input manager to read the left and right sticks of a gamepad as normalized input vectors.
 
-```c#
+```cs
 // KatamariInputController.cs
 public void OnLeftThrottle(InputValue val)
 {
@@ -70,7 +70,7 @@ public void OnRightThrottle(InputValue val)
 The best way I thought of to determine the directional similarity of the two inputs was using their dot product.
 A positive dot product means the vectors are going in mostly the same direction, thus the input should be considered a movement, and if they're negative, then they're in opposing directions, and we should treat the input as a rotation.
 
-```c#
+```cs
 // KatamariInputController.cs
 private void Update()
 {
@@ -119,7 +119,7 @@ Positive on the right (0, 1) push on the right-hand side of the katamari, and th
 First, I created a new script to manage the camera and follow the katamari's position.
 Putting the tracking logic in `LateUpdate()` made sure that the any movements applied to the katamari were finished when the camera was up to transform its own position.
 
-```c#
+```cs
 // SimpleCameraFollow.cs
 private void LateUpdate()
 {
@@ -131,7 +131,7 @@ private void LateUpdate()
 ```
 
 Since there's only 1 axis about which to rotate, I simply stored the rotation direction in this camera script, being set by the input controller.
-```c#
+```cs
 // KatamariInputController.cs
 private void Update()
 {
@@ -204,7 +204,7 @@ public void StickYToRotation(float ly, float ry)
 This worked nicely, and now it was a matter some conditions for ironing out the edge cases of accelerated rotation and preventing rotation when the inputs yielded movement.
 
 
-```c#
+```cs
 // KatamariInputController.cs
 
 // in Update()
@@ -243,7 +243,7 @@ Yet Unity's physics engine understandably has a rough time with this...rigidbodi
 
 To combat this, I just detected the collision with Unity's `OnCollisionEnter(Collision collider)`.
 
-```c#
+```cs
 // StickyProp.cs
 private void OnCollisionEnter(Collision collider)
 {
@@ -270,7 +270,7 @@ In the actual game, this list is quite long:
 
 <br />
 
-```c#
+```cs
 // StickyProp.cs
 private void StickToKatamari(GameObject katamari)
 {
@@ -310,7 +310,7 @@ For my own implementation I created a child on the "prop" prefab, onto which I a
 Outliers would still operate the same, but it wouldn't absolutely upset the momentum and force applied to the sphere.
 I also expanded the sphere collider on the katamari itself when it picked up a new object.
 
-```c#
+```cs
 // StickyProp.cs
 private void StickToKatamari(GameObject katamari)
 {

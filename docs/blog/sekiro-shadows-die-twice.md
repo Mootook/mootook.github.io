@@ -41,7 +41,7 @@ many other boss fights that didn't stick with me (The Owl, for instance).
 It's not the fact that fighting a big monkey is more interesting than fighting a really strong human, because the fight against the two guardian apes wasn't all that memorable. 
 While most of this could probably be reduced to preference, I think a lot of what makes the Guardian Ape unique comes down to a combination of level, story, and combat design.
 
-## Space, Focus, and Context
+## Level Layout and Space
 
 In Sekiro, the layout is often part of the challenge.
 The type of terrain, how narrow, how bright, usually all work in unison with the types of enemies you're pitted against.
@@ -99,6 +99,8 @@ Of course, scale isn't applied universally and works largely because of its cont
 
 Cramped and uncomfortable then spacious and precarious -- Sekiro has boss's on both sides of the spectrum and each is used to create a distinct feeling. In my mind, the Guardian Ape is one of the best fights across the board because of how it plays to its strengths.
 
+## Props
+
 Another element of the space provided by the boss fight is the collection of things or environmental elements: rocks, trees, pots, whatever. In the general game world of Sekiro, these aren't really a problem. Just go around or over, but in a boss fight, where one's attention has been narrowed to a narrow set of interactions, these elements can often make or break a fight, and in repeated, unbeaten sprees, change what becomes memorable or stands out from a boss fight.
 
 For me, one of the most prominent examples is the fight against Father Gascoigne in Bloodborne. It is mostly made challenging by the tombstones and poles about the area. You can't spam dodge in this fight. Not only do you have to time dodge in time with the boss's attack animations, you have to quickly glance at your character's periphery and make a quick judgement about which way has the most space.
@@ -127,28 +129,6 @@ In summation, the space and simplicity of the Guardian Ape's arenas work to emph
 
 Oh, and one last thing on this idea of space...it's a small point, and I nearly forgot.
 But it's about context and purpose.
-
-{% comment %}
-
-// makes sense the guardian ape is HERE
-// not the case with every boss
-// headless are always in dark rooms
-// armored knight and corrupted monk are guarding bridges/physical manifestations of progression
-
-Notes:
-- Space
-- Difficulty
-- Surprise
-- Scale
-- The Arena
-- Attack variance
-- Combat mechanic context
-- Unpredictability vs Patterened movement
-- guarding something as opposed to bypassing the natural progression (like on a bridge)
-- we're taking from the guardian ape, not trying to get past him.
-- If the guardian ape is so memorable, why isn't the fight with both of them MORE memorable?
-
-{% endcomment %}
 
 #### Resources
 - [Interview with Hidetaka Miyazaki](https://www.gameinformer.com/games/demons_souls/b/ps3/archive/2009/11/05/feature-demon-s-souls-director-discusses-difficulty-sequels-and-more.aspx)
