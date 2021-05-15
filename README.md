@@ -4,3 +4,11 @@
 
 
 Currently transitioning this website to use VuePress and Netlify.
+
+## Docs
+
+- [VuePress](https://vuepress2.netlify.app/)
+
+## Issues
+
+- [Using Sass Vars](https://github.com/vuejs/vuepress/issues/2148)

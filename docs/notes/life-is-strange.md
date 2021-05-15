@@ -1,6 +1,9 @@
 ---
 title: Life is Strange - Sounds and Connection
 date: Mon Nov 12 12:35:10 PDT 2018
+prev:
+    text: Back to Notes
+    link: /notes
 ---
 This article was originally published on Nov 12, 2018 on [Medium.com](https://medium.com/@alexanderkmutuc/sound-and-connection-in-life-is-strange-49d628d41590).
 
