@@ -6,12 +6,11 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   lang: 'en-US',
   title: 'mootook',
   description: '',
-  alias: {
-    '@': path.resolve(__dirname, '../../src')
-  },
+  alias: { '@': path.resolve(__dirname, '../../src') },
   themeConfig: {
     navbar: [
-      { text: 'Home', link: '/' },
+      { text: 'Blog', link: '/blog' },
+      { text: 'Projects', link: '/projects' }
     ]
   }
 })
