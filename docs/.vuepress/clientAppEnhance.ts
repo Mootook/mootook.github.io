@@ -1,7 +1,9 @@
 import { defineClientAppEnhance } from '@vuepress/client'
-import HelloWorld from '@/components/HelloWorld.vue'
+import ArticleCard from '@/components/ArticleCard.vue'
+
+console.log('Article Card', ArticleCard)
 
 export default defineClientAppEnhance(({ app, router, siteData}) => {
-  app.component('HelloWorld', HelloWorld)
+  app.component('ArticleCard', ArticleCard)
 })
 
