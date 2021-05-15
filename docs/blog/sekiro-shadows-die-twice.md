@@ -1,20 +1,19 @@
 ---
-layout: post
 title: "Sekiro: Shadows Die Twice - The Guardian Ape"
 date: Sat Sep 12 19:02:37 PDT 2020
 category: notes
-permalink: /notes-sekiro-shadows-die-twice
-active: true
+prev:
+    text: Go back
+    link: /blog
 ---
 
-<h1 class="title">Sekiro: Shadows Die Twice</h1>
-<h1 class="title">The Guardian Ape</h1>
+# Sekiro: Shadows Die Twice - The Guardian Ape
 
 
-![title-card](https://i.ibb.co/W2K2Bcn/guardianape-02.jpg){: .post-image}
+![title-card](https://i.ibb.co/W2K2Bcn/guardianape-02.jpg)
 
 
-<h2>Intro</h2>
+## Intro
 
 Shortly after Demon's Souls released in 2009, Hidetaka Miyazaki, was quoted that the goal of their (FromSoftware) games was about providing 
 players with a sense of accomplishment. The to-come infamous difficulty of souls as a franchise was simply a byproduct of this design philosophy.
@@ -42,7 +41,7 @@ many other boss fights that didn't stick with me (The Owl, for instance).
 It's not the fact that fighting a big monkey is more interesting than fighting a really strong human, because the fight against the two guardian apes wasn't all that memorable. 
 While most of this could probably be reduced to preference, I think a lot of what makes the Guardian Ape unique comes down to a combination of level, story, and combat design.
 
-### Space, Focus, and Context
+## Space, Focus, and Context
 
 In Sekiro, the layout is often part of the challenge.
 The type of terrain, how narrow, how bright, usually all work in unison with the types of enemies you're pitted against.

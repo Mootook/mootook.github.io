@@ -1,16 +1,12 @@
 ---
-layout: post
 title: Almost Katamari Damacy
 date: Sat Apr 14 12:35:41 PDT 2021
-category: engineering
-permalink: /almost-katamari
-active: true
 ---
 
-## Almost Katamari
+# Almost Katamari
 
 
-### Objective / Inspiration
+## Objective / Inspiration
 
 I've been watching my partner play through [Katamari Damacy](https://www.nintendo.com/games/detail/katamari-damacy-reroll-switch/) on the Nintendo Switch lately.
 I'd never really played or seen this game, only heard about it as the game where you "roll a bunch of stuff into a ball."
@@ -39,18 +35,18 @@ I then wanted to see if I could mock up the core of Katamari's gameplay. So much
 </div>
 
 
-### Beginning
+## Beginning
 
 I started the scene by adding some of the usual packages: the new input manager, probuilder, and progrids. I also download this [asset](https://assetstore.unity.com/packages/3d/props/interior/polygon-office-low-poly-3d-art-by-synty-159492) (Synty's low poly 3d art) from the unity asset store in preparation for the 'interactable' items I'd like to implement.
 
-![editor-1](https://i.ibb.co/LCd2Jdw/editor-1.png){: .post-image}
+![editor-1](https://i.ibb.co/LCd2Jdw/editor-1.png)
 
 With a rigidbody and input handler on the katmari game object, I started by trying to understand the whacky controls.
 
 
-### Movement
+## Movement
 
-![controls](https://i.ibb.co/nmSrnkQ/controls.png){: .post-image}
+![controls](https://i.ibb.co/nmSrnkQ/controls.png)
 
 Trying to convert these into a program, even as pseudo-code, took me a bit to understand, and I had to spend a great deal of time in the Katamari tutorial area seeing how different axes configurations impacted the movement and rotation of the katamari.
 
@@ -108,7 +104,7 @@ private void FixedUpdate()
 
 Excellent.
 
-### Rotation
+## Rotation
 
 If the two input vectors are not pointing in the same direction, or if one is zero while the other isn't, the camera is rotated (orbited?) about the katamari. 
 
@@ -235,7 +231,7 @@ else if (_dot < 0.0f)
     </iframe>
 </div>
 
-### Picking up stuff
+## Picking up stuff
 
 Time for the heart of Katamari's gameplay. Rolling stuff into a ball.
 
@@ -308,7 +304,7 @@ This, it seems, is done, by fudging some of the colliders once they get attached
 
 And, subtly, as the katamari gets bigger, the camera distances itself on both the z and y axes, which, I assume, is done by manually incrementing the camera's offset each item pickup.
 
-![Colliders](https://i.ibb.co/DGSsG7n/knife-in-ground.png){: .post-image}
+![Colliders](https://i.ibb.co/DGSsG7n/knife-in-ground.png)
 
 For my own implementation I created a child on the "prop" prefab, onto which I attached the mesh collider, and once it was picked up, I shrunk it in half.
 Outliers would still operate the same, but it wouldn't absolutely upset the momentum and force applied to the sphere.
@@ -335,7 +331,7 @@ private void StickToKatamari(GameObject katamari)
 
 This also helped with "props" that required multiple mesh colliders. 
 
-### Not picking up stuff
+## Not picking up stuff
 
 Not picking up stuff required addressing Katamari's "sizing" system, or whatever internal logic is used to govern if or when the player can roll up a specific prop.
 At first it made the most to have this be determined by the Katamari's size...can only pick up props that the ball is larger than. Compare its bounds to that of the mesh in question, and good to go.
@@ -347,7 +343,7 @@ The challenge of Katamari is often about passing these invisible thresholds, and
 It's a little more cumbersome to manually specify sizes on each object, but it gives the designers more control over the experience.
 
 
-### The level
+## The level
 
 With some of the basics out of the way. I started designing out a level!
 Most Katamari levels start somewhere small: on a table, under a car. And the player is generally restricted to a singular area. The areas with larger props aren't necessarily inaccessible, but they are often hard to get to, and because the paths are lined with bigger and bigger items, they become impossible to navigate.
@@ -356,7 +352,7 @@ With most of my props being office-centric, I figured it'd be cool to start on a
 
 
 
-### Resources
+## Resources
 
 - [CatLikeCoding Orbit Camera](https://catlikecoding.com/unity/tutorials/movement/orbit-camera/)
 - [Unity Forums Sticky Ball](https://answers.unity.com/questions/634831/how-do-i-make-make-objects-stick-to-a-ball-and-aff.html)

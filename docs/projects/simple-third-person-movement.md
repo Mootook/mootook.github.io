@@ -1,10 +1,6 @@
 ---
-layout: post
 title: Third Person Movement
 date: Sat Apr 03 12:35:41 PDT 2021
-category: engineering
-permalink: /third-person-movement
-active: true
 ---
 
 ## Third Person Movement
