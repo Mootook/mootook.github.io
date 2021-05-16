@@ -7,8 +7,8 @@ tagline: null
 
 ## /notes
 
-<ArticleList category="notes" />
+<BlurbCardList category="notes" />
 
 ## /projects
 
-<ArticleList category="projects" />
+<BlurbCardList category="projects" />

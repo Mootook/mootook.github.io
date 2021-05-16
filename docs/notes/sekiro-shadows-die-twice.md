@@ -53,7 +53,7 @@ The arena in which you fight a boss, or mini-boss in some instances, is generall
 
 ![title-card](https://i.ibb.co/86W1xGm/lone-shadow-masanaga.jpg)
 
-<p style="width: 100%; padding-left: 2rem;">
+<p style="padding-left: 2rem;">
     One of the hardest bosses for me, "Lone Shadow Masanaga the Spear-Bearer, seen here
     about to kick me in a narrow room.
     Here the limited space is the most significant challenge of this fight, accentuating the boss's striking kick and generally

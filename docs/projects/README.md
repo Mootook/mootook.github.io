@@ -5,4 +5,4 @@ isDirectory: true
 
 # /projects
 
-<ArticleList category="projects" />
+<BlurbCardList category="projects" />
