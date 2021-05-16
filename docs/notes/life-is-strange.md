@@ -21,70 +21,31 @@ It is an interesting game, and though it may not be for everyone, LiS has some u
 
 Diegetic and nondiegetic are terms in film that refer to a particular sound's origin and how it relates to any given scene. Diegetic sound is naturally occurring and audible to the characters - wind, gunshots, people talking, a radio. Diegetic sound belongs within the film's world and is thus processed by characters and viewers alike.
 The video below shows a scene from Saving Private Ryan which is comprised pretty much exclusively of diegetic sounds. Everything that you hear in this scene, the characters can also hear.
-<div class="youtube-wrapper">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/DSKerypwUDM"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  >
-  </iframe>
-</div>  
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/DSKerypwUDM" />
+
 
 Diegetic sound creates a sense of presence and, when coupled with the right visuals, can make for an incredibly immersive experience.
 Nondiegetic sound, however, represents all of the things that exist in that odd layer between the film's world and the audience. Nondiegetic sound is just sort of layered upon the scene but is inaudible to the characters. A narrator for instance or a movie's score represent nondiegetic elements.
 This scene from 2001: A Space Odyssey is well known for having done this using "The Blue Danube."
-<div class="youtube-wrapper">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/muPNlnm_i44"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+
+<VideoFrame  videoUrl="https://www.youtube.com/embed/muPNlnm_i44" />
 
 
 Pretty much every film will mix these two types of sound to create a dynamic environment of sounds and music, and when successful, the audio can do just as much for a story or experience as the visuals.
 Here, WALL-E's opening scene uses a seemingly nondiegetic element as a visual/auditory contrast for exposition and for a bit of character development. Using sound like this is another way to subtly subvert our expectations of a particular scene, making for memorable introductions and plot points.
-<div class="youtube-wrapper">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/nLx_7wEmwms"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>  
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/nLx_7wEmwms" />
+
 
 And here, The Emperor's New Groove uses its opening narration as a bit of fun fourth-wall breaking to introduce us to its main character.
-<div class="youtube-wrapper">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/uT4ySwoh27Q"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/uT4ySwoh27Q" />
 
 
 Even the trailer for The Last of Us Part II was clever in the way it handled its sound design and score.
-<div class="youtube-wrapper">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/W2Wnvvj33Wo"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/W2Wnvvj33Wo" />
 
 
 (What a fantastic trailer in my opinion)  

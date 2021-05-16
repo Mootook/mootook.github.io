@@ -78,18 +78,7 @@ In the case of the Guardian Ape, the amount of space is both necessary, and cont
 It's not the fact that it's a cramped fight that makes me dislike it, it's that it's an odd way to create those cramped circumstances. The elements chosen seem incompatible and imbalanced.
 The level and weird enemy choice make for a rather static, chore of a fight.
 
-
-<div style="width: 100%; text-align: center; padding-bottom: 1rem;">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/LN74ocuBark"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    ></iframe>
-</div>
+<VideoFrame videoUrl="https://www.youtube.com/embed/LN74ocuBark" />
 
 In general, scale and space provide safety, but it isn't static. While the Guardian Ape's arena is one of the largest out of any boss fight, you're never quite safe. His speed, aggression, and move variety ensure that distance doesn't equate to safety. It means that I can breathe while being engaged, but even that can change at any second.
 
@@ -140,7 +129,6 @@ But it's about context and purpose.
 - [Boss Up: Boss Battle Design Fundamentals and Retrospective](https://www.youtube.com/watch?v=48Ymh4Ge5j8&ab_channel=GDC)
 - [The World Design of Dark Souls](https://www.youtube.com/watch?v=QhWdBhc3Wjc&ab_channel=GameMaker%27sToolkit)
 - [Sekiro vs. Souls](https://www.youtube.com/watch?v=Is4JhZgVRqk&ab_channel=NeverKnowsBest)
-<br/>
 #### Image Credits
 - [https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape](https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape)
 

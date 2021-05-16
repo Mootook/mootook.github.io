@@ -19,18 +19,8 @@ It's a snappy game that requires the ability to traverse platforms and obstacles
 
 I think R&C is a really good example of a simple yet versatile and effective character controller. I knew moving into this project, I wanted my own implementation to have that responsiveness.
 
-<div style="width: 100%; text-align: center">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/hlS11AnILXs?start=372"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    >
-    </iframe>
-</div>
+<VideoFrame videoUrl="https://www.youtube.com/embed/hlS11AnILXs?start=372" />
+
 
 #### 3D Zelda Games
 
@@ -38,18 +28,7 @@ I think R&C is a really good example of a simple yet versatile and effective cha
 
 The joy of zelda games, for me, come from the puzzles and environments. It's much slower than R&C with fewer things going on at any time. The camera is often positioned for the player rather than by them, and the moveset is simpler to account for the narrow focus. While this may sound like a negative opinion, I really do think the control of Link is a rather important feature because of how unobtrusive it is. It never gets in your way yet gives you all that you need to explore and interact with the world.
 
-<div style="width: 100%; text-align: center">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/2xnA9tAqaUg?start=4789"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    >
-    </iframe>
-</div>
+<VideoFrame videoUrl="https://www.youtube.com/embed/2xnA9tAqaUg?start=4789" />
 
 ### Beginning
 
@@ -257,18 +236,7 @@ This, by design, was something I wanted to implement quickly, get a feel for, an
 
 The first iteration [05.11.2021] includes basic 3D locomotion, jumping, and falling.
 
-<div style="width: 100%; text-align: center">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/OYi6gO65fJ0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    >
-    </iframe>
-</div>
+<VideoFrame videoUrl="https://www.youtube.com/embed/OYi6gO65fJ0" />
 
 ### Next Steps 
 
