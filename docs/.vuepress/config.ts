@@ -1,6 +1,6 @@
 const path = require('path')
 import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions, WebpackBundlerOptions } from 'vuepress'
+import type { DefaultThemeOptions, WebpackBundlerOptions, App, Page } from 'vuepress'
 
 export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   lang: 'en-US',
@@ -21,5 +21,12 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
       // bundle sass for components
       additionalData: `@use "@styles/palette.scss" as *;`
     }
+  },
+  onInitialized: async (app: App) => {},
+  extendsPageOptions: (fp: string) => {
+    return {}
+  },
+  extendsPageData: (p: Page) => {
+    return {}
   }
 })

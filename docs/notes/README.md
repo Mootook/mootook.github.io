@@ -1,5 +1,6 @@
 ---
 sidebar: false
+isDirectory: true
 ---
 # /notes
 

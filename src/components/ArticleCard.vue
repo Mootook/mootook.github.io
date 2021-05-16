@@ -1,7 +1,9 @@
 <script lang="ts" setup>
+import { usePagesData } from '@vuepress/client'
 import { useRouter } from 'vue-router'
 import { defineProps } from 'vue'
 import type { Router } from 'vue-router'
+import type { PagesDataRef } from '@vuepress/client'
 
 const props = defineProps<{
   title: string,
@@ -11,9 +13,19 @@ const props = defineProps<{
 }>()
 
 const router: Router = useRouter()
+const goToArticle: (() => void) = () => router.push(props.link)
 
-const goToArticle = () => router.push(props.link)
-
+const pagesData: PagesDataRef = usePagesData()
+// idea is to 
+// pass in the 'title'
+// only as a prop, then on mount, set some loading state,
+// match it here
+// this happens client side, but can be configured
+// with NODE api once it gets released/documented
+const log: (() => void) = async () => {
+  const pagesKeys = Object.keys(pagesData.value)
+  const pages = await pagesKeys.map(k => pagesData.value[k]().then(p => console.log(p)))
+}
 </script>
 
 <template>
@@ -23,7 +35,7 @@ const goToArticle = () => router.push(props.link)
       <div class="title-separator" />
       <span>{{ date }}</span>
     </div>
-    <div class="snippet-wrapper">
+    <div @click="log" class="snippet-wrapper">
       <p>{{ description }}</p>
     </div>
   </div>
