@@ -2,29 +2,29 @@
 import { useRouter } from 'vue-router'
 import { defineProps } from 'vue'
 import type { Router } from 'vue-router'
+import type { Blurb } from '@shared/types'
+import type { PropType } from 'vue'
 
-const props = defineProps<{
-  title: string,
-  date: string,
-  link: string,
-  description?: string
-}>()
+const props = defineProps({
+  blurb: {
+    type: Object as PropType<Blurb>,
+    required: true
+  }
+})
 
 const router: Router = useRouter()
-
-const goToArticle = () => router.push(props.link)
-
+const goToArticle = () => router.push(props.blurb.link)
 </script>
 
 <template>
   <div class="article-card-wrapper">
     <div class="title-wrapper">
-      <h3 @click="goToArticle">{{ title }}</h3>
+      <h3 @click="goToArticle">{{ blurb.title }}</h3>
       <div class="title-separator" />
-      <span>{{ date }}</span>
+      <span>{{ blurb.date }}</span>
     </div>
     <div class="snippet-wrapper">
-      <p>{{ description }}</p>
+      <p>{{ blurb.description }}</p>
     </div>
   </div>
   <div class="article-separator" />

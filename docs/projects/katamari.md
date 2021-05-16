@@ -23,20 +23,7 @@ Yet I had become convinced that the controls suited the game. It's a simple game
 
 I then wanted to see if I could mock up the core of Katamari's gameplay. So much of the game is about its other components -- the amazing soundtrack, iconic art, somewhat reflective and deprecating messaging about consumerism, or something. But in essence, I wanted to replicate the core mechanical interaction between the player, the katamari, and all the stuff you get to roll-up.
 
-
-<div style="width: 100%; text-align: center">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/hEAP-4iUirY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    >
-    </iframe>
-</div>
-
+<VideoFrame videoUrl="https://www.youtube.com/embed/hEAP-4iUirY" />
 
 ## Beginning
 
@@ -221,18 +208,9 @@ else if (_dot < 0.0f)
     _camController.AccelerateRotation();
 }
 ```
-<div style="width: 100%; text-align: center">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/ZD3gld127-I"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    >
-    </iframe>
-</div>
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/ZD3gld127-I" />
+
 
 ## Picking up stuff
 
@@ -285,18 +263,9 @@ Seeing as I was going to create a large amount of these "props", I decided to sp
 
 Applying that onto some sandwiches and we get:
 
-<div style="width: 100%; text-align: center">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/7ke_cvaE2LA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-    >
-    </iframe>
-</div>
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/7ke_cvaE2LA" />
+
 
 With this, the core implementation felt more or less "in-place". Level design was a beast itself, and I put all of the UI bits on hold while I looked into polishing some of this behavior.
 

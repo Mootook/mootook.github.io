@@ -8,13 +8,17 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "allowJs": true,
     "types": [ "webpack-env" ],
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["docs/.vuepress/src/*"],
+      "@shared/*": ["docs/.vuepress/shared/*"],
+      "@temp/*": ["docs/.vuepress/.temp/*"],
+      
     },
     "lib": [
       "esnext",
@@ -24,9 +28,9 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "docs/.vuepress/src/**/*.ts",
+    "docs/.vuepress/src/**/*.tsx",
+    "docs/.vuepress/src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
     "./docs/.vuepress/**/*.ts"
