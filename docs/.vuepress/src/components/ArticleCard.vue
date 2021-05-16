@@ -1,42 +1,30 @@
 <script lang="ts" setup>
-import { usePagesData } from '@vuepress/client'
 import { useRouter } from 'vue-router'
 import { defineProps } from 'vue'
 import type { Router } from 'vue-router'
-import type { PagesDataRef } from '@vuepress/client'
+import type { Blurb } from '@/types'
+import type { PropType } from 'vue'
 
-const props = defineProps<{
-  title: string,
-  date: string,
-  link: string,
-  description?: string
-}>()
+const props = defineProps({
+  blurb: {
+    type: Object as PropType<Blurb>,
+    required: true
+  }
+})
 
 const router: Router = useRouter()
-const goToArticle: (() => void) = () => router.push(props.link)
-
-const pagesData: PagesDataRef = usePagesData()
-// idea is to 
-// pass in the 'title'
-// only as a prop, then on mount, set some loading state,
-// match it here
-// this happens client side, but can be configured
-// with NODE api once it gets released/documented
-const log: (() => void) = async () => {
-  const pagesKeys = Object.keys(pagesData.value)
-  const pages = await pagesKeys.map(k => pagesData.value[k]().then(p => console.log(p)))
-}
+const goToArticle = () => router.push(props.blurb.link)
 </script>
 
 <template>
   <div class="article-card-wrapper">
     <div class="title-wrapper">
-      <h3 @click="goToArticle">{{ title }}</h3>
+      <h3 @click="goToArticle">{{ blurb.title }}</h3>
       <div class="title-separator" />
-      <span>{{ date }}</span>
+      <span>{{ blurb.date }}</span>
     </div>
-    <div @click="log" class="snippet-wrapper">
-      <p>{{ description }}</p>
+    <div class="snippet-wrapper">
+      <p>{{ blurb.description }}</p>
     </div>
   </div>
   <div class="article-separator" />

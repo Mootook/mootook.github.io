@@ -1,12 +1,19 @@
 const path = require('path')
 import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions, WebpackBundlerOptions, App, Page } from 'vuepress'
+import { generateDirectory } from './utils'
+import type { DefaultThemeOptions, WebpackBundlerOptions, App } from 'vuepress'
+
+const DIRECTORY_FILE = 'directory.json'
 
 export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   lang: 'en-US',
   title: 'mootook',
   description: '',
-  alias: { '@': path.resolve(__dirname, '../../src'), "@styles": path.resolve(__dirname, './styles') },
+  alias: {
+    '@': path.resolve(__dirname, './src'),
+    '@shared': path.resolve(__dirname, './shared'),
+    "@styles": path.resolve(__dirname, './styles')
+  },
   themeConfig: {
     navbar: [
       { text: '/notes', link: '/notes' },
@@ -22,11 +29,8 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
       additionalData: `@use "@styles/palette.scss" as *;`
     }
   },
-  onInitialized: async (app: App) => {},
-  extendsPageOptions: (fp: string) => {
-    return {}
-  },
-  extendsPageData: (p: Page) => {
-    return {}
+  onPrepared: async (app: App) => {
+    const directory = generateDirectory(app.pages)
+    await app.writeTemp(DIRECTORY_FILE, JSON.stringify(directory))
   }
 })

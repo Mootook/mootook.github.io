@@ -12,3 +12,4 @@ Currently transitioning this website to use VuePress and Netlify.
 ## Issues
 
 - [Using Sass Vars](https://github.com/vuejs/vuepress/issues/2148)
+- [Extend Markdown](https://stackoverflow.com/questions/55046233/how-to-change-content-of-vuepress-page-via-plugin)
