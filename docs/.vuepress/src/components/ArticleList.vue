@@ -1,20 +1,16 @@
 <script setup lang="ts">
 import { defineProps, computed } from 'vue'
-import { blurbFromPage } from '@/utils'
 import ArticleCard from '@/components/ArticleCard.vue'
 
 import type { Directory } from '@shared/types'
-
 import directoryJSON from '@temp/directory.json'
 const directory: Directory = directoryJSON
-
-console.log(directory)
 
 const props = defineProps<{
   category: string,
 }>()
 
-const articleBlurbs = computed(() => directory[props.category].map(p => blurbFromPage(p)) || [])
+const articleBlurbs = computed(() => directory[props.category] || [])
 
 </script>
 

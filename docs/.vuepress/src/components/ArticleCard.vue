@@ -2,7 +2,7 @@
 import { useRouter } from 'vue-router'
 import { defineProps } from 'vue'
 import type { Router } from 'vue-router'
-import type { Blurb } from '@/types'
+import type { Blurb } from '@shared/types'
 import type { PropType } from 'vue'
 
 const props = defineProps({

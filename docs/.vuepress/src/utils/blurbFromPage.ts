@@ -1,5 +1,5 @@
 import type { Page } from 'vuepress'
-import type { Blurb } from '@/types'
+import type { Blurb } from '@shared/types'
 
 const SENTENCE_COUNT = 5
 

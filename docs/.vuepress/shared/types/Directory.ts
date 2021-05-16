@@ -1,3 +1,5 @@
-import type { Page } from 'vuepress'
+import type { Blurb } from '@shared/types'
 
-export type Directory = { [key: string]: Page[] }
+export type Directory = {
+  [key: string]: Blurb[]
+}

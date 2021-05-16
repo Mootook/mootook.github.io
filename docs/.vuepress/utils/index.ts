@@ -1,1 +1,1 @@
-export { default as generateDirectory } from './generateDirectory'
+export * from './generateDirectory'
