@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { generateDirectory } from './utils'
 import type { DefaultThemeOptions, WebpackBundlerOptions, App } from 'vuepress'
 
-const DIRECTORY_FILE = 'directory.json'
+const DIRECTORY_FILE: string = 'directory.json'
 
 export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   lang: 'en-US',
@@ -11,7 +11,7 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   description: '',
   alias: {
     '@': path.resolve(__dirname, './src'),
-    '@shared': path.resolve(__dirname, './shared'),
+    '@shared': path.resolve(__dirname, './shared'), // types between node, client
     "@styles": path.resolve(__dirname, './styles')
   },
   themeConfig: {

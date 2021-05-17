@@ -1,4 +1,3 @@
-
 export interface Blurb {
   title: string,
   date: string,

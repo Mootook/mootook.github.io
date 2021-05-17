@@ -1,10 +1,10 @@
 import { defineClientAppEnhance } from '@vuepress/client'
-import ArticleCard from '@/components/ArticleCard.vue'
+import BlurbCard from '@/components/BlurbCard.vue'
 import VideoFrame from '@/components/VideoFrame.vue'
-import ArticleList from '@/components/ArticleList.vue'
+import BlurbCardList from '@/components/BlurbCardList.vue'
 
 export default defineClientAppEnhance(({ app, router, siteData}) => {
-  app.component('ArticleCard', ArticleCard)
+  app.component('BlurbCard', BlurbCard)
   app.component('VideoFrame', VideoFrame)
-  app.component('ArticleList', ArticleList)
+  app.component('BlurbCardList', BlurbCardList)
 })
