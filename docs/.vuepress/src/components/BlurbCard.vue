@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import { defineProps, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { defineProps } from 'vue'
+import { formatDate } from '@/utils'
+
 import type { Router } from 'vue-router'
 import type { Blurb } from '@shared/types'
 import type { PropType } from 'vue'
@@ -14,6 +16,8 @@ const props = defineProps({
 
 const router: Router = useRouter()
 const goToArticle = () => router.push(props.blurb.link)
+const formattedDate = computed(() => formatDate(new Date(props.blurb.date)) || '')
+
 </script>
 
 <template>
@@ -21,7 +25,7 @@ const goToArticle = () => router.push(props.blurb.link)
     <div class="title-wrapper">
       <h3 @click="goToArticle">{{ blurb.title }}</h3>
       <div class="title-separator" />
-      <span>{{ blurb.date }}</span>
+      <span>{{ formattedDate }}</span>
     </div>
     <div class="snippet-wrapper">
       <p>{{ blurb.description }}</p>
