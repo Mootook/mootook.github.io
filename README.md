@@ -15,7 +15,6 @@
 - [Using Sass Vars](https://github.com/vuejs/vuepress/issues/2148)
 - [Extend Markdown](https://stackoverflow.com/questions/55046233/how-to-change-content-of-vuepress-page-via-plugin)
 
-
 ### Notes/Roadmap
 
 The lists seen for /projects and /notes are dynamically generated vie the `onPrepared` hook in VuePress's config.
@@ -26,3 +25,5 @@ This pipeline thus opens up the opportunity to filter by timestamp, add tags, se
 
 Todo:
 - [x] Trim the stored page data in the temp/json object
+- [ ] Node script to generate post/project post with default front matter
+    - [inquirer](https://www.npmjs.com/package/inquirer)
