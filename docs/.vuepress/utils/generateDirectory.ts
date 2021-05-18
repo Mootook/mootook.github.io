@@ -1,6 +1,10 @@
-import type { Page } from 'vuepress'
 import { Directory, Blurb } from '@shared/types'
+import type { Page } from 'vuepress'
 
+/**
+ * How many sentences to keep for the blurb entry
+ * from the file article/page?
+ */
 const SENTENCE_COUNT = 5
 
 /**
@@ -25,15 +29,12 @@ const cleanMarkdown = (content: string): string => {
 /**
  * Get the first few sentences from the article content
  * for the blurb description.
- * @param {string} content
- * @returns {string}
  */
-const parseDescription = (content: string) => {
+const parseDescription = (content: string): string => {
   const cleaned = cleanMarkdown(content)
   const sentences = cleaned.match( /[^\.!\?]+[\.!\?]+/g )
   if (sentences && sentences.length > 0) {
     const truncated = sentences.slice(0, SENTENCE_COUNT)
-    // console.log('Sentences: ', truncated)
     return truncated.join(' ')
   }
   return ''
@@ -41,8 +42,6 @@ const parseDescription = (content: string) => {
 
 /**
  * Create Blurb object for props.
- * @param {Page} p
- * @returns {Blurb}
  */
 const blurbFromPage = (p: Page): Blurb => ({
   title: p.title,
@@ -52,10 +51,7 @@ const blurbFromPage = (p: Page): Blurb => ({
 })
 
 /**
- * 
- * @param {string} category
- * @param {Page[]} pages 
- * @returns {Page[]}
+ * Get all the children posts for a category
  */
 const listChildren = (category: string, pages: Page[]): Blurb[] => {
   return pages
@@ -65,9 +61,7 @@ const listChildren = (category: string, pages: Page[]): Blurb[] => {
 }
 
 /**
- * 
- * @param {Page} p
- * @returns {string}
+ * Get the category from its filepath
  */
 const parseCategory = (p: Page) => {
   const fp = p.filePathRelative
@@ -78,26 +72,21 @@ const parseCategory = (p: Page) => {
 }
 
 /**
- * @param {Page} p
- * @returns  {boolean}
+ *
  */
 const isDirectory = (p: Page) => !!(p.frontmatter.isDirectory)
 
-
 /**
- * @param {Page[]} pages
- * @returns {Directory}
+ * Writes a temporary json file
+ * with a directory for client side props, functionality
  */
 export const generateDirectory = (pages: Page[]) => {
   const directories = pages.filter(p => isDirectory(p))
   // the temp file object to store
   const ret: Directory = {}
   directories.forEach(d => {
-    const category: string = parseCategory(d)
+    const category = parseCategory(d)
     const children = listChildren(category, pages)
-    // to do
-    // parse the children objects
-    // so that they're not so large...
     ret[category] = children
   })
   return ret

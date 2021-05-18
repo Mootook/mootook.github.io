@@ -23,6 +23,11 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
     contributors: false,
     lastUpdated: false
   },
+  markdown: {
+    code: {
+      lineNumbers: false
+    }
+  },
   bundlerConfig: {
     scss: {
       // bundle sass for components

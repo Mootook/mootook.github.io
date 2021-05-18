@@ -2,8 +2,6 @@
 sidebar: false
 ---
 
-
-
 # About
 
 Hello!

@@ -121,6 +121,6 @@ One other interesting point that I enjoy about the Guardian Ape is something tha
 - [The World Design of Dark Souls](https://www.youtube.com/watch?v=QhWdBhc3Wjc&ab_channel=GameMaker%27sToolkit)
 - [Sekiro vs. Souls](https://www.youtube.com/watch?v=Is4JhZgVRqk&ab_channel=NeverKnowsBest)
 #### Image Credits
-- [https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape](https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape)
+- [Guardian Ape](https://sekiroshadowsdietwice.wiki.fextralife.com/Guardian+Ape)
 - [Father Gascoigne](https://www.youtube.com/watch?v=vnYw9Vs9V0Q)
 
