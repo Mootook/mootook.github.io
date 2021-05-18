@@ -39,6 +39,8 @@ const formattedDate = computed(() => formatDate(new Date(props.blurb.date)) || '
 .article-card-wrapper {
   display: grid;
   grid-template-columns: 14rem 1fr;
+
+  
   .title-wrapper {
     display: flex;
     flex-direction: column;
@@ -74,6 +76,13 @@ const formattedDate = computed(() => formatDate(new Date(props.blurb.date)) || '
     -webkit-box-orient: vertical;
     p {
       margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    .snippet-wrapper {
+      margin: 1rem 1rem 1rem 0.5rem;
     }
   }
 }
