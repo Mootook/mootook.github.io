@@ -1,13 +1,12 @@
 ---
-title: "Sekiro: Shadows Die Twice - The Guardian Ape"
+title: "Sekiro: Shadows Die Twice - Space, Props, and The Guardian Ape"
 date: Sat Sep 12 19:02:37 PDT 2020
-category: notes
 prev:
     text: Back to Notes
     link: /notes
 ---
 
-# Sekiro: Shadows Die Twice - The Guardian Ape
+# Sekiro: Shadows Die Twice - Space, Props, and The Guardian Ape
 
 
 ![title-card](https://i.ibb.co/W2K2Bcn/guardianape-02.jpg)
@@ -20,7 +19,7 @@ players with a sense of accomplishment. The to-come infamous difficulty of souls
 Difficulty, to Miyazaki and thus FromSoftware, was a tool for the designers, a way to enable this unique experience. And the exaggerated nature of a soul's game's difficulty can explain why many players herald them as such unique experiences.
 
 If that goal of FromSoftware has stayed consistent through the years, then Sekiro: Shadows Die Twice has a difficulty meant to enhance this intended experience.
-Sekiro and other souls games differ greatly in many of their design aesthetics, worlds, and mechanics. These differences are a write-up analysis on their own, but even still, they create an unfortunate issue when discussing Sekiro: discussing Sekiro is often done through a lens experienced with Dark Souls and the "souls formula" that resulted from three successful iterations. It's hard to not identify game design aspects independent of how they operated in other souls games.
+Sekiro and other souls games differ greatly in many of their design aesthetics, worlds, and mechanics. These differences are a write-up analysis on their own, but even still, they create an unfortunate issue when discussing Sekiro, which is that analyses of Sekiro are often through a lens experienced with Dark Souls and the "souls formula" that resulted from three successful iterations. It's hard to identify game design aspects independent of how they operated in other souls games.
 
 But despite their differences, Sekiro and Souls seem to share the goal of creating a sense of accomplishment for the player. Or rather, creating the circumstances and obstacles so that players can create/find that sense on their own.
 
@@ -29,17 +28,18 @@ They are concentrated challenges, the relative peaks of difficulty within the ov
 
 Sekiro, I believe, uses bosses well to this effect.
 
-Many of them made me rage. The fight with Genichiro Ashina, atop Ashina Castle, made me quit the game for nearly a year.
-Some, like the Divine Dragon or the Headless, made me sad or terrified. Yet by and large, I found most of them to be memorable -- singular, unique experiences from which I could derive how I felt at the time and the feeling after.
+Many of them made me rage. The fight with Genichiro Ashina, atop Ashina Castle, made me quit the game for nearly a year. Some, like the Divine Dragon or the Headless, made me sad or terrified. Yet by and large, I found most of them to be memorable -- singular, unique experiences from which I could derive how I felt at the time and the feeling after.
 
-The Guardian Ape, I feel, is one of the most memorable boss fights not just in Sekiro but in any game I've ever played, and I believe it's worth looking into for a number of reasons. It's a memorable boss fight, but why? It's not like there's a fundamental alteration in how the game is played. The player has access to many of the same tools at this point in the game as any other, with the exception of some passive upgrades and a bigger health bar. It's not the "most difficult", nor is it completed in some unique way. While it punctuates a major story beat, so do many other boss fights that didn't stick with me (The Owl, for instance). It's not the fact that fighting a big monkey is more interesting than fighting a really strong human, because the fight against the two guardian apes wasn't all that memorable. While most of this could probably be reduced to preference, I think a lot of what makes the Guardian Ape unique comes down to a combination of level, story, and combat design.
+The Guardian Ape, I believe, is one of the most memorable boss fights not just in Sekiro but in any game I've ever played, and I believe it's worth looking into for a number of reasons. It's a memorable boss fight, but why? It's not like there's a fundamental alteration in how the game is played. The player has access to many of the same tools at this point in the game as any other, with the exception of some passive upgrades and a bigger health bar. It's not the "most difficult", nor is it completed in some unique way. While it punctuates a major story beat, so do many other boss fights that didn't stick with me (The Owl, for instance). It's not the fact that fighting a big monkey is more interesting than fighting a really strong human, because the fight against the two guardian apes wasn't all that memorable.
+
+A lot of boss fights throughout the souls games, including Sekiro, can bring forth a "well, that's bullshit" reaction. It's when the game makes an exception in its own internal logic at the expense of the player. Why, for instance, does my sword hit a wall, but this boss, four times as large as I can kill me from another room? The souls games already have a niche, hardcore following, largely because of how difficult and isolating their core mechanics are, and thus there's the common tendency to shoo these observations away. "Well, that's souls games for ya" or "just get good" are more than just consistent phrases amongst players; they inform judgement on a game's quality and the affordances allowed by the player. In my own perceptions, as well, the pride I feel from having beaten these games retroactively stunts my ability to analyze encounters and their relative strengths.
+
+With time and the palette cleansers of some other titles, I've tried going back and thinking of what boss fights have stayed with me and why. Top of the list is the Guardian Ape. And while one could strongly reduce why I remember this encounter to just "preference," I think a lot of what makes the Guardian Ape unique comes down to a combination of level, story, and combat design.
 
 ## Level Layout and Space
 
-In Sekiro, the layout is often part of the challenge.
-The type of terrain, how narrow, how bright, usually all work in unison with the types of enemies you're pitted against.
-And rarely are these elements employed to make things easier. Rather areas often enhance the strengths of enemies,
-bait the player into choke-points so they face numerous enemies, put you in small spaces against aggressive foes, etc.
+In Sekiro, the layout is often part of the challenge. The type of terrain, how narrow, how bright, usually all work in unison with the types of enemies you're pitted against.
+And rarely are these elements employed to make things easier. Rather areas often enhance the strengths of enemies, bait the player into choke-points so they face numerous enemies, put you in small spaces against aggressive foes, etc.
 
 As Mark Brown puts it in his analysis of DS1:
 
@@ -49,7 +49,7 @@ And while Sekiro is not Dark Souls -- the ideal way is arguably the opposite of 
 
 This holds true for bosses.
 
-The arena in which you fight a boss, or mini-boss in some instances, is generally an extension of the boss fight (Of course the bull who blindly charges you is in a narrow passage). Navigating the space provided is the secondary, or implicit challenge that comes with trying to kill them.
+The arena in which you fight a boss, or mini-boss in some instances, is generally an extension of the boss fight (Of course the bull who blindly charges you is in a narrow passage). Navigating the space provided is the secondary or implicit challenge that comes with trying to kill them.
 
 ![title-card](https://i.ibb.co/86W1xGm/lone-shadow-masanaga.jpg)
 
@@ -64,16 +64,17 @@ The arena in which you fight a boss, or mini-boss in some instances, is generall
 
 What I love about the Guardian Ape fight is the space. There's quite a few areas in Sekiro where you have ample space to fight someone/thing -- Gyoubu Oniwa, Lady Butterfly -- and it makes for an epic setting. In scale alone, it feels special that the world has allotted you such a significant amount of space to fight, important that they control and are defending such a large swath of territory from you. In visuals alone, space can show how large a boss is relative to that player simply by showing how much room each one occupies in a given arena.
 
-In the case of the Guardian Ape, the amount of space is both necessary, and contextually sound (it's a giant ape). In stark contrast, one of my least favorite experiences in any souls game was fighting the Capra Demon. He's easy once you know what to do, but even still, the space isn't flush with the enemy. Its swords are too large for the space, there's two guard dogs inside (why are they not patrolling, aren't they cramped?), and the seemingly random staircase feels like the game is narrowing my attention, when I'd just like the freedom to figure this fight out. Yes, the staircase provides a safe haven, but then its revealed that the Capra demon can kinda climb it before falling down and trying again, which, in my case, really breaks the illusion. There's no decision making relative to the boss. If I can just hide in this corner, wait for him fall then hit him and do it all again, why wouldn't I always do that? There's no decision making relative to the boss's patterns or level with the exception of his failed jump attack.
-It's not the fact that it's a cramped fight that makes me dislike it, nor is the Capra Demon and two dogs a bad enemy, it's that the elements chosen seem incompatible and imbalanced.
+In the case of the Guardian Ape, the amount of space is both necessary, and it makes sense for the boss's design. The Guardian Ape is fast and aggressive. It has a large variety of attacks, and almost all of them cover a large amount of area. The game provides the player with an open, mostly empty space because of this. Beating the boss requires recognizing animations and spacing just outside the Guardian Ape, which is only possible because the arena provides the player space to orbit, movement options to properly approach the fight.
 
-<VideoFrame videoUrl="https://www.youtube.com/embed/LN74ocuBark" />
-
-Regarding a boss's arena, scale and space provide safety but in a precarious, engaging way. While the Guardian Ape's arena is one of the largest out of any boss fight, you're never quite safe, and thus the interactions rarely feel static. His speed, aggression, and move variety ensure that distance doesn't equate to safety. On the one hand, this provides the players with some breathing room, and space affords more movement options, yet because it's partnered with a boss that can traverse the space quickly and aggressively, it keeps an undercurrent of uncertainty and thus engagement.
+The arena's scale and space provide safety but in a precarious, engaging way. While the Guardian Ape's arena is one of the largest out of any boss fight, you're never quite safe, and thus the interactions rarely feel static. His speed, aggression, and move variety ensure that distance doesn't equate to safety. On the one hand, this provides the players with some breathing room, and space affords more movement options, yet because it's partnered with a boss that can traverse the space quickly and aggressively, it keeps an undercurrent of uncertainty and thus engagement.
 
 Another reason why the space here seems to work is because of how it contrasts a lot of Sekiro's other bosses. Sekiro has no shortage of cramped, uncomfortable boss fights. The fight with the Guardian Ape is probably the "largest" up to this point. In both space and enemy design, the Guardian Ape is quite different from anything the player has encountered thus far in the game. It pounds its fist, rolls around, leaps towards you, throws literal shit at you when you run away, each of its moves flowing into the next so that it's hard to predict what's coming next, hard to judge the moment when you can move in for your singular strike before running away again. The space emphasizes this attack pattern and move-set. It makes them possible, and it does so while dwarfing the player.
 
-<img src="https://i.ibb.co/XsGY0fx/ape-space.jpg" alt="ape-space" border="0">
+![ape](https://i.ibb.co/XsGY0fx/ape-space.jpg)
+
+In stark contrast, one of my least favorite experiences in any souls game was fighting the Capra Demon. He's easy once you know what to do, and that's perhaps part of the problem. And I believe it's derived from the fact that the space isn't flush with the enemy. Its swords are too large for the space, there's two guard dogs inside (why are they not patrolling, aren't they cramped?), and the seemingly random staircase feels like the game is narrowing my attention, when I'd just like the freedom to figure this fight out. Yes, the staircase provides a safe haven, but then it's revealed that the Capra demon can kinda climb it before falling down and trying again, which really breaks the illusion that I'm fighting a conscious entity. There's no decision making relative to the boss. If I can just hide in this corner, wait for him fall then hit him and do it all again, why wouldn't I always do that? There's no decision making relative to the boss's patterns or level with the exception of his failed jump attack. It's not the fact that it's a cramped fight that makes me dislike it, nor is the Capra Demon and two dogs a bad enemy design, it's that the elements chosen seem incompatible and imbalanced.
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/LN74ocuBark" />
 
 Cramped and uncomfortable then spacious and precarious -- Sekiro has boss's on both sides of the spectrum and each is used to create a distinct feeling. In my mind, the Guardian Ape is one of the best fights across the board because of how it plays to its strengths. The concept of space isolated as a design element is not enough to make or break a boss fight, nor is it just the Guardian Ape as a boss, it's the unification of the two, and how they enhance one another. 
 
@@ -85,20 +86,20 @@ For me, one of the most prominent examples is the fight against Father Gascoigne
 
 ![bloodborne-father](https://i.ibb.co/ZzhLwZq/bloodborne-father.png)
 
-This relationship isn't a bad thing. It makes for an interesting dynamic and forces the player to juggle more variables, and in games like Bloodborne or Dark Souls, a lot of bosses err more towards this structure because it is in sync with mechanics of movement and attack afforded to the player.
+This relationship isn't a bad thing. It makes for an interesting dynamic and forces the player to juggle more variables. In response many of bosses don't have distinct directional attacks so that dodging in at least one direction works. In games like Bloodborne or Dark Souls, a lot of bosses err more towards this structure because it is in sync with the combat and movement mechanics.
 
 Sekiro's verticality and tempo mostly push the usage of "props" in creating challenging spaces towards the annoying (why grant the player incredible speed and the ability to jump and grapple hook across a level if you're just going to enclose them during every significant encounter). Because of this aren't many cases where navigating about props is a significant factor. A lot of Sekiro's boss arenas are just flat, empty arenas with a few poles for safety. The Guardian Ape, as well, features only a few trees about the level. They aren't jumbled closely and they aren't wide enough so that when you bump up against them you stop moving. The lack of props serves to focus the attention of the player on the boss fight. Adding giant rocks or small tree clusters in the level could create scenarios antithetical to the strengths of the Guardian Ape's fight: speed and scale. They would also falsely provide a sense of security as in some other fights (hiding behind the rock against the Shichimen Warrior).
 
 << Shichimen Warrior Rock PIC >>
 
 
-Another small point about limiting the amount of stuff in a level: the camera has less to account for, less things it needs to make translucent or orbit about. This is a little hard to explain, and I didn't recognize it as something until I encountered it handled poorly (or perhaps intentionally frustrating). The fight with the True Corrupted Monk takes place on a narrow, scenic bridge, but if you fight in the center, which feels natural as it's more difficult to fight and move against the walls on either side of the bridge, there's a tree that looms over into the foreground, obstructing the view, distracting from the fight.
+Another small point about limiting the amount of stuff in a level: the camera has less to account for, less things it needs to make translucent or orbit about. This is a little hard to explain, and I didn't recognize it as something until I encountered it handled poorly (or perhaps intentionally to my frustration). The fight with the True Corrupted Monk takes place on a narrow, scenic bridge, but if you fight in the center, which feels natural as it's more difficult to fight and move against the walls on either side of the bridge, there's a tree that looms over into the foreground, obstructing the view, distracting from the fight.
 
-<img class="post-image" src="https://i.ibb.co/DwrjZ3f/corrupted-monk-tree.jpg" alt="corrupted-monk-tree" border="0">
+![true-monk](https://i.ibb.co/DwrjZ3f/corrupted-monk-tree.jpg)
 
 Yeah, it's pretty. But it adds a frustrating variable. It's a weird translucent tree branch across your screen. It's not an interesting decision for the player -- perhaps because it divides the relationship between the player character and the player. The tree branch isn't something that your character can jump around or consider in the next movement. A giant pole I accidentally dodged into? Yeah, makes sense, that would annoy both the Wolf and me, and when I come back, hopefully I'll have the mental dexterity to take it into consideration. Yet the giant tree branch only obstructs your, the player's, view and thus the entrance into this fantasy. It's almost like cluttered UI -- separate from the game world and annoying simply because it's there.
 
-This point also brings up a common problem in souls games: the camera. There is a common joke about the internet about the camera in FromSoftware games being the hardest boss, always there when you get pressed into a corner, orbiting at such an awkward angle you panic, lose focus and ultimately die. Aggressive bosses force you into corners, make you feel at a disadvantage, claustrophobic, and anxious. The squished and unbalanced camera emphasizes this.
+This point also brings up a common problem in souls games: the camera. There is a common joke about the internet about the camera in FromSoftware games being the hardest boss, always there when you get pressed into a corner, orbiting at such an awkward angle you panic, lose focus, and ultimately die. Aggressive bosses force you into corners, make you feel at a disadvantage, claustrophobic, and anxious. The squished and unbalanced camera emphasizes this.
 
 In larger spaces, such as with the Guardian Ape, this isn't too much of a problem. Even with large, aggressive bosses, space gives the player options, mitigating the risk they get pressed against and watch the camera orbit into an unnatural, uncomfortable angle.
 
@@ -107,6 +108,12 @@ In summation, the space and simplicity of the Guardian Ape's arenas work to emph
 One other interesting point that I enjoy about the Guardian Ape is something that I notice a lot of games handle poorly: context.
 
 ## Context
+
+Sometimes when playing games, I'll see an NPC or a boss and think "odd...why are you here." And the reason varies from game to game and from NPC to NPC. When it happens, it can often break the fantasy of the game's world. And I think most people who've played through video games can identify this thought. Sometimes you'll stroll into a room, an empty, unimportant room, and there's just a large knight waiting to kill you. That knight seems of the game and not of the game world.
+
+I have this thought every time I see Havel the Rock, the rough and tough boss sitting in the basement of the watcher in DS1. He's so damn strong, and I'm not entirely sure what he's guarding -- me getting into Darkroot Basin? The giant rock things getting into the Undead Burg? There's probably some reason buried in some souls lore, but regarding what the game presents me, there doesn't seem to be a justification for his being right there. Why is such a strong enemy guarding such a small dark room?
+
+I'm nit-picking of course. Souls games have a lot of tough enemies, and they can't possibly imbue every space with relevance relative to its inhabitants, but encounters feel significant when they are of the world and feel like they are taking place in it (fighting Quelaag, for example, is made great for me solely because of the web that surrounds her cavern, which you have to run into just to initiate the fight). She isn't the most engaging fight, but within the context of the game, I understand why she's there.
 
 
 
