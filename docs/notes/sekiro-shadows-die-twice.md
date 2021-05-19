@@ -55,10 +55,11 @@ The arena in which you fight a boss, or mini-boss in some instances, is generall
 
 <p style="padding-left: 2rem;">
     One of the hardest bosses for me, "Lone Shadow Masanaga the Spear-Bearer, seen here
-    about to kick me in a narrow room.
+    about to kick in a narrow room.
     Here the limited space is the most significant challenge of this fight, accentuating the boss's striking kick and generally
     aggressive attack pattern.
 </p>
+
 
 <div style="background-color: gray; width: 100%; height: 1px; margin-bottom: 1rem;"></div>
 
@@ -72,7 +73,7 @@ Another reason why the space here seems to work is because of how it contrasts a
 
 ![ape](https://i.ibb.co/XsGY0fx/ape-space.jpg)
 
-In stark contrast, one of my least favorite experiences in any souls game was fighting the Capra Demon. He's easy once you know what to do, and that's perhaps part of the problem. And I believe it's derived from the fact that the space isn't flush with the enemy. Its swords are too large for the space, there's two guard dogs inside (why are they not patrolling, aren't they cramped?), and the seemingly random staircase feels like the game is narrowing my attention, when I'd just like the freedom to figure this fight out. Yes, the staircase provides a safe haven, but then it's revealed that the Capra demon can kinda climb it before falling down and trying again, which really breaks the illusion that I'm fighting a conscious entity. There's no decision making relative to the boss. If I can just hide in this corner, wait for him fall then hit him and do it all again, why wouldn't I always do that? There's no decision making relative to the boss's patterns or level with the exception of his failed jump attack. It's not the fact that it's a cramped fight that makes me dislike it, nor is the Capra Demon and two dogs a bad enemy design, it's that the elements chosen seem incompatible and imbalanced.
+In stark contrast, one of my least favorite experiences in any souls game was fighting the Capra Demon. He's not only easy once you know what to, but he almost ceases to *be* a boss because of how one can defeat him. I believe it's derived from the fact that the space isn't flush with the enemy. Its swords are too large for the space, there's two guard dogs inside (why are they not patrolling, aren't they cramped?), and the seemingly random staircase feels like the game is narrowing my attention, when I'd just like the freedom to figure this fight out. Yes, the staircase provides a safe haven, but then it's revealed that the Capra demon can kinda climb it before falling down and trying again, which really breaks the illusion that I'm fighting a conscious entity. There's no decision making relative to the boss. If I can just hide in this corner, wait for him fall then hit him and do it all again, why wouldn't I always do that? There's no decision making relative to the boss's patterns or level with the exception of his failed jump attack. It's not the fact that it's a cramped fight that makes me dislike it, nor is the Capra Demon and two dogs a bad enemy design, it's that the elements chosen seem incompatible and imbalanced.
 
 <VideoFrame videoUrl="https://www.youtube.com/embed/LN74ocuBark" />
 
@@ -89,8 +90,6 @@ For me, one of the most prominent examples is the fight against Father Gascoigne
 This relationship isn't a bad thing. It makes for an interesting dynamic and forces the player to juggle more variables. In response many of bosses don't have distinct directional attacks so that dodging in at least one direction works. In games like Bloodborne or Dark Souls, a lot of bosses err more towards this structure because it is in sync with the combat and movement mechanics.
 
 Sekiro's verticality and tempo mostly push the usage of "props" in creating challenging spaces towards the annoying (why grant the player incredible speed and the ability to jump and grapple hook across a level if you're just going to enclose them during every significant encounter). Because of this aren't many cases where navigating about props is a significant factor. A lot of Sekiro's boss arenas are just flat, empty arenas with a few poles for safety. The Guardian Ape, as well, features only a few trees about the level. They aren't jumbled closely and they aren't wide enough so that when you bump up against them you stop moving. The lack of props serves to focus the attention of the player on the boss fight. Adding giant rocks or small tree clusters in the level could create scenarios antithetical to the strengths of the Guardian Ape's fight: speed and scale. They would also falsely provide a sense of security as in some other fights (hiding behind the rock against the Shichimen Warrior).
-
-<< Shichimen Warrior Rock PIC >>
 
 
 Another small point about limiting the amount of stuff in a level: the camera has less to account for, less things it needs to make translucent or orbit about. This is a little hard to explain, and I didn't recognize it as something until I encountered it handled poorly (or perhaps intentionally to my frustration). The fight with the True Corrupted Monk takes place on a narrow, scenic bridge, but if you fight in the center, which feels natural as it's more difficult to fight and move against the walls on either side of the bridge, there's a tree that looms over into the foreground, obstructing the view, distracting from the fight.
@@ -109,11 +108,37 @@ One other interesting point that I enjoy about the Guardian Ape is something tha
 
 ## Context
 
-Sometimes when playing games, I'll see an NPC or a boss and think "odd...why are you here." And the reason varies from game to game and from NPC to NPC. When it happens, it can often break the fantasy of the game's world. And I think most people who've played through video games can identify this thought. Sometimes you'll stroll into a room, an empty, unimportant room, and there's just a large knight waiting to kill you. That knight seems of the game and not of the game world.
+Sometimes when playing games, I'll see an NPC or a boss and think "odd...why are you here." And the reason varies from game to game and from NPC to NPC. When it happens, it can often break the fantasy of the game's world. And I think most people who've played through video games can identify this thought. Sometimes you'll stroll into a room, an empty, unimportant room, and there's just a large knight waiting to kill you. That knight seems of the game and not of the game world. There was a space in the game, and it needed to be populated with any enemy, and so sticks were drawn.
 
-I have this thought every time I see Havel the Rock, the rough and tough boss sitting in the basement of the watcher in DS1. He's so damn strong, and I'm not entirely sure what he's guarding -- me getting into Darkroot Basin? The giant rock things getting into the Undead Burg? There's probably some reason buried in some souls lore, but regarding what the game presents me, there doesn't seem to be a justification for his being right there. Why is such a strong enemy guarding such a small dark room?
+I have this thought every time I see Havel the Rock, the tank of a boss sitting in the basement of the watch tower in DS1. He's so damn strong, and I'm not entirely sure what he's guarding -- me getting into Darkroot Basin? The giant rock things getting into the Undead Burg? Why wasn't there someone slightly below his level preceding him? There's probably some reason buried in some souls lore, but regarding what the game presents me, there doesn't seem to be a justification for his being right there. Why is such a strong enemy guarding such a small dark room? (Though, sidenote, I don't think the level is a bad choice for this fight. I actually think it works.)
 
-I'm nit-picking of course. Souls games have a lot of tough enemies, and they can't possibly imbue every space with relevance relative to its inhabitants, but encounters feel significant when they are of the world and feel like they are taking place in it (fighting Quelaag, for example, is made great for me solely because of the web that surrounds her cavern, which you have to run into just to initiate the fight). She isn't the most engaging fight, but within the context of the game, I understand why she's there.
+I'm nit-picking of course. Souls games have a lot of tough enemies, and they can't possibly imbue every space with relevance relative to its inhabitants, but encounters feel significant when they are of the world and feel like they are taking place in it. The fights themselves don't need to be grand or built for the enemy, but the encounter and its occupants should, if only slightly, provide some justification for each other.
+
+I've heard the argument that Dark Souls has "harder" enemies to justify. It's more cryptic story, fantastical setting, and less direct method of world building and storytelling do not lend themselves naturally to explanation and thus contextual justifications for the existence of particular enemies in particular spaces. Whereas many of Sekiro's encounters occur in a war zone, a blanket justification for the presence of almost all of the enemies. Yet, the justification, I believe can be small, purely aesthetic. I've already bought into the game world, so as long as the explanations are consistent, then I generally don't notice.
+
+Anyways, I bring this up because I think not handling it well can create a hiccup in the engagement of a video game's world.
+
+Take, the Schimen Warrior for example. When it's first encountered, it's in a creepy, dark cave. The player is given space to run around and dodge its loud, horrifying spirit cannon, which quite literally scares you to death on contact. Yet it's also a bright, beautiful purple, and one of your only light sources in the fight. Not my favorite fight, but it makes sense. Dark, scary cave. Yes, probably has a dancing spirit monster that shoots the faces of the undead at you. Checks out.
+
+Yet in Fountainhead Palace, there's another one, at the base of a waterfall. I understand this place has a connection to the spiritual plane and is of another dimension in ways, but why, with all of its elements handled so well in the cave, is it tucked in this narrow, bright passage? It's pretty much the exact same fight, but in one it felt like an inhabitant of the space, a guardian that the player is pitted against. The other feels awkward and a bit frustrating.
+
+These may be small points to get caught up, but for me they can tip the balance of a boss being "difficult but pretty cool" to "difficult and annoying."
+
+The Guardian Ape, I believe, is handled very well in multiple ways, and its place in the timeline and game world cemented in my memory.
+
+The first is that the Guardian Ape, go figure, is guarding something from the player. That's it's objective. Blocking the player's progress, in many ways, is the goal of many bosses through the souls games: Taurus Demon, Cleric Beast, True Corrupted Monk -- they all jump in front of the player on narrow bridges, quite bluntly blocking progression. The bridge makes sense as a chokepoint, and progression from one side to other becomes a binary necessity that's easy to funnel players toward, which is why boss's make sense as guardians of passage.
+
+In the case of the Guardian, it's an item. Yet one thing I find really cool is how the fight is initiated.
+
+// he's guarding it from everyone, not just the player
+
+// he's not even facing the right way, he's tending to it!
+
+// guarding
+
+// minions
+
+ (fighting Quelaag, for example, is made great for me solely because of the web that surrounds her cavern, which you have to run into just to initiate the fight). She isn't the most engaging fight, but within the context of the game, I understand why she's there.
 
 
 
