@@ -116,6 +116,10 @@ I'm nit-picking of course. Souls games have a lot of tough enemies, and they can
 
 I've heard the argument that Dark Souls has "harder" enemies to justify. It's more cryptic story, fantastical setting, and less direct method of world building and storytelling do not lend themselves naturally to explanation and thus contextual justifications for the existence of particular enemies in particular spaces. Whereas many of Sekiro's encounters occur in a war zone, a blanket justification for the presence of almost all of the enemies. Yet, the justification, I believe can be small, purely aesthetic. I've already bought into the game world, so as long as the explanations are consistent, then I generally don't notice.
 
+Zelda games, for example, have some unique, varied environments and enemies, yet it layers these elements with thematic level/dungeon design that compounds up to the final boss who is a manifestation of those narrative and aesthetic design facets. Undertale, in its one way, uses humor, which is seen as consistent in the universe's absurdity to explain NPCs.
+
+<< UNDERTALE PIC >>
+
 Anyways, I bring this up because I think not handling it well can create a hiccup in the engagement of a video game's world.
 
 Take, the Schimen Warrior for example. When it's first encountered, it's in a creepy, dark cave. The player is given space to run around and dodge its loud, horrifying spirit cannon, which quite literally scares you to death on contact. Yet it's also a bright, beautiful purple, and one of your only light sources in the fight. Not my favorite fight, but it makes sense. Dark, scary cave. Yes, probably has a dancing spirit monster that shoots the faces of the undead at you. Checks out.
