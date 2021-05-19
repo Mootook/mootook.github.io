@@ -1,6 +1,7 @@
 ---
 title: Almost Katamari Damacy
 date: Sat Apr 14 12:35:41 PDT 2021
+thumbnail: https://i.ibb.co/yknnM6w/katamari-damacy-gameplay-Moment.jpg
 prev:
     text: Back to Projects
     link: /projects

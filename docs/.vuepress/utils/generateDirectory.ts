@@ -47,7 +47,8 @@ const blurbFromPage = (p: Page): Blurb => ({
   title: p.title,
   date: p.frontmatter.date as string,
   link: p.path,
-  description: parseDescription(p.content)
+  description: parseDescription(p.content),
+  thumbnail: p.frontmatter.thumbnail as string
 })
 
 /**

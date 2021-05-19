@@ -1,6 +1,7 @@
 ---
 title: "Sekiro: Shadows Die Twice - Space, Props, and The Guardian Ape"
 date: Sat Sep 12 19:02:37 PDT 2020
+thumbnail: https://i.ibb.co/W2K2Bcn/guardianape-02.jpg
 prev:
     text: Back to Notes
     link: /notes

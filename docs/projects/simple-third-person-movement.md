@@ -1,6 +1,7 @@
 ---
 title: Third Person Movement
 date: Sat Apr 03 12:35:41 PDT 2021
+thumbnail: https://i.ibb.co/TbZV0k1/cc-thumbnail.png
 prev:
     text: Back to Projects
     link: /projects
