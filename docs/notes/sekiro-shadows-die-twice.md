@@ -105,47 +105,55 @@ In larger spaces, such as with the Guardian Ape, this isn't too much of a proble
 
 In summation, the space and simplicity of the Guardian Ape's arenas work to emphasize the boss's strengths of speed and aggression while rightly mitigating the usage of challenging environmental elements and tight corridors.
 
-One other interesting point that I enjoy about the Guardian Ape is something that I notice a lot of games handle poorly: context.
-
 ## Context
 
-Sometimes when playing games, I'll see an NPC or a boss and think "odd...why are you here." And the reason varies from game to game and from NPC to NPC. When it happens, it can often break the fantasy of the game's world. And I think most people who've played through video games can identify this thought. Sometimes you'll stroll into a room, an empty, unimportant room, and there's just a large knight waiting to kill you. That knight seems of the game and not of the game world. There was a space in the game, and it needed to be populated with any enemy, and so sticks were drawn.
+Sometimes when playing games, I'll see an NPC or a boss and think "odd...why are you here." And the reason varies from game to game and from NPC to NPC. When it happens, it can often break the fantasy of the game's world. And I'd bet that most people who've played through a video game can identify with this thought. Sometimes you'll stroll into a room, an empty, unimportant room, and there's just a large knight waiting to kill you. Why are you even here? Is this a very important room?
 
-I have this thought every time I see Havel the Rock, the tank of a boss sitting in the basement of the watch tower in DS1. He's so damn strong, and I'm not entirely sure what he's guarding -- me getting into Darkroot Basin? The giant rock things getting into the Undead Burg? Why wasn't there someone slightly below his level preceding him? There's probably some reason buried in some souls lore, but regarding what the game presents me, there doesn't seem to be a justification for his being right there. Why is such a strong enemy guarding such a small dark room? (Though, sidenote, I don't think the level is a bad choice for this fight. I actually think it works.)
+In instances like this, the enemy seems of the *game* and not of the *game world*. There was a space in the game, and it needed to be populated with an enemy, and so sticks were drawn.
 
-I'm nit-picking of course. Souls games have a lot of tough enemies, and they can't possibly imbue every space with relevance relative to its inhabitants, but encounters feel significant when they are of the world and feel like they are taking place in it. The fights themselves don't need to be grand or built for the enemy, but the encounter and its occupants should, if only slightly, provide some justification for each other.
+I have this thought every time I see Havel the Rock, the tank of a boss sitting in the basement of the watch tower in DS1. He's so damn strong, and I'm not entirely sure what he's guarding -- me getting into Darkroot Basin? The giant rock things getting into the Undead Burg? Why wasn't there someone slightly below his level preceding him? Is there a cool treasure chest in here? An important NPC over there? Does he like it here in the musty room? There's probably some reason buried in the souls lore, but regarding what the game presents me, there doesn't seem to be a justification for his being right there. Why is such a strong enemy guarding such a small dark room? (Though, sidenote, I don't think the level is a bad choice for this fight. I actually think it works.)
 
-I've heard the argument that Dark Souls has "harder" enemies to justify. It's more cryptic story, fantastical setting, and less direct method of world building and storytelling do not lend themselves naturally to explanation and thus contextual justifications for the existence of particular enemies in particular spaces. Whereas many of Sekiro's encounters occur in a war zone, a blanket justification for the presence of almost all of the enemies. Yet, the justification, I believe can be small, purely aesthetic. I've already bought into the game world, so as long as the explanations are consistent, then I generally don't notice.
+<< Havel the Rock Pic >>
 
-Zelda games, for example, have some unique, varied environments and enemies, yet it layers these elements with thematic level/dungeon design that compounds up to the final boss who is a manifestation of those narrative and aesthetic design facets. Undertale, in its one way, uses humor, which is seen as consistent in the universe's absurdity to explain NPCs.
+I'm nit-picking of course. Souls games have a lot of tough enemies, and they can't possibly imbue every space with relevance relative to its inhabitants, but encounters feel significant when they are of the world and feel like they are taking place in it and not because of how the game is guiding you through it. The fights themselves don't need to be grand or built for the enemy, but the encounter and its occupants should, if only slightly, provide some justification for each other. Immersive and rich worlds to me seem like they could exist independent of the player. Its NPCs, enemies and places would still be there whether the player did or didn't decide to venture in them.
+
+I've heard the argument that Dark Souls has "harder" enemies to justify. It's more cryptic story, fantastical setting, and less direct method of world building and storytelling do not lend themselves naturally to explanation and thus contextual justifications for the existence of particular enemies in particular spaces. Whereas many of Sekiro's encounters occur in a war zone, a blanket justification for the presence of almost any kind of enemy. Yet, the justification, I believe can be small, purely aesthetic. I've already bought into the game world, so as long as the explanations are consistent, then I generally don't notice.
+
+Zelda games, for example, have some unique, varied environments and enemies, yet it layers these elements with thematic level/dungeon design that compounds up to the final boss who is a manifestation of those narrative and aesthetic design facets.
+
+<< Windwaker Kalle Demos Boss PIC >>
+
+Undertale, in its one way, uses humor, which is seen as consistent in the universe's absurdity to explain "out of place" NPCs.
 
 << UNDERTALE PIC >>
 
 Anyways, I bring this up because I think not handling it well can create a hiccup in the engagement of a video game's world.
 
-Take, the Schimen Warrior for example. When it's first encountered, it's in a creepy, dark cave. The player is given space to run around and dodge its loud, horrifying spirit cannon, which quite literally scares you to death on contact. Yet it's also a bright, beautiful purple, and one of your only light sources in the fight. Not my favorite fight, but it makes sense. Dark, scary cave. Yes, probably has a dancing spirit monster that shoots the faces of the undead at you. Checks out.
+Take, the Schimen Warrior for example. When it's first encountered, it's in a creepy, dark cave. The player is given space to run around and dodge its loud and horrifying spirit cannon, which quite literally scares you to death on contact. Yet the projectiles are also a bright, beautiful purple, and one of your only light sources in the fight. Not my favorite fight, but it makes sense. Dark, scary cave -- yea, probably has a dancing spirit monster that shoots the faces of the undead at you. Checks out.
 
-Yet in Fountainhead Palace, there's another one, at the base of a waterfall. I understand this place has a connection to the spiritual plane and is of another dimension in ways, but why, with all of its elements handled so well in the cave, is it tucked in this narrow, bright passage? It's pretty much the exact same fight, but in one it felt like an inhabitant of the space, a guardian that the player is pitted against. The other feels awkward and a bit frustrating.
+Yet in Fountainhead Palace, there's another one, at the base of a waterfall. I understand this place has a connection to the spiritual plane and is of another dimension in ways, but why, with all of its elements handled so well in the cave, is it tucked in this narrow, bright passage? It's pretty much the exact same fight, but in one it felt like an inhabitant of the space, a guardian that the player is pitted against. Here the fight feels awkward and a bit frustrating.
 
-These may be small points to get caught up, but for me they can tip the balance of a boss being "difficult but pretty cool" to "difficult and annoying."
+These may be small points to get caught up, but for me they can tip the balance of a boss being "difficult but pretty cool" to "difficult and annoying." The Guardian Ape's context, I believe, is handled very well in multiple ways, and its place in the timeline and game world cemented the fight in my memory.
 
-The Guardian Ape, I believe, is handled very well in multiple ways, and its place in the timeline and game world cemented in my memory.
+The first is that the Guardian Ape is, go figure, guarding something from the player. That's it's objective. Without this item, the player cannot proceed. It can be argued that all bosses block the player's progress in Sekiro. Yet how and why, I believe, is the distinguishing idea here. Take, for example, Taurus Demon, Cleric Beast, True Corrupted Monk. They all jump in front of the player on narrow bridges, quite bluntly blocking progression. For the boss, the one who in these instances initiates the fight, the bridge makes sense as a chokepoint. It doesn't seem that I happened upon them as they were collecting tolls from other passersby. They jumped down at this specific point, seemingly to fight in a location of their choosing, to challenge the player on their terms. Bosses that guard passage in this way are explained by the layout itself. The boss has binarized the world, but even still, it makes sense that they'd fight you then and there.
 
-The first is that the Guardian Ape, go figure, is guarding something from the player. That's it's objective. Blocking the player's progress, in many ways, is the goal of many bosses through the souls games: Taurus Demon, Cleric Beast, True Corrupted Monk -- they all jump in front of the player on narrow bridges, quite bluntly blocking progression. The bridge makes sense as a chokepoint, and progression from one side to other becomes a binary necessity that's easy to funnel players toward, which is why boss's make sense as guardians of passage.
+In the case of the Guardian Ape, this conflict around progression is manifested as an item. This type of conflict is just as common as the bridge, but it's explained or justified to the player differently.
 
-In the case of the Guardian, it's an item. Yet one thing I find really cool is how the fight is initiated.
+Look below at how the fight is introduced:
 
-// he's guarding it from everyone, not just the player
+<< Guardian Ape pic >>
 
-// he's not even facing the right way, he's tending to it!
+The Guardian Ape is not facing the player. Against the white fog, it's almost invisible, not really obstructing much of the frame. It's hunched over. Its back is to you, assumedly tending to and watching over the Lotus of the Palace (the item you happen to need). In place alone, regardless of the player's actions, the Guardian Ape is here tending to its flower at the bottom of this valley. It has a comfortable amount of space and a narrow, singular entrance which makes guarding this space simpler. Yet by being able to see the Guardian Ape like this it further justifies its "guarding". It's not solely protecting the Lotus from the player, it's protecting it from everything in this world.
 
-// guarding
+There's no doubt that the Guardian Ape would react to any intruder as it did to the player. And here, in contrast to "bridge" bosses, the player has to initiate the fight. The player has to decide when it begins. If you didn't need this item, you wouldn't have to encroach on its territory. It doesn't go out of its way to fight or hunt you, nor does it spring from an unseen branch to challenge you. It fights you because you want to fight it, same would happen with anything that challenged it. By doing this, the fight feels organic, created by the player and has a sense of place, as if many before you have tried and failed to rob the Ape of its treasure.
 
-// minions
+Another interesting concept used in the level for the Guardian Ape (much of the Sunken Valley feels like it was built for this boss), is the monkey enemies as a means of foreshadowing. The entire level leading up to the boss is populated with small monkeys hanging from branches, huddled in groups, that'll attack the player if they get too close. Once the Guardian Ape has been encountered, the monkeys make even more sense in their belonging to this place -- small minions that may one day grow up to be like the Guardian Ape.
 
- (fighting Quelaag, for example, is made great for me solely because of the web that surrounds her cavern, which you have to run into just to initiate the fight). She isn't the most engaging fight, but within the context of the game, I understand why she's there.
+<< Monkey Sunken Valley Pic >>
 
+In many ways, this design element is reminiscent of Quelaag from DS1. At the bottom of Blight-town, everyone's favorite place, the most common enemy is a creepy, fire/lava breathing spider. Then in the distance, past the poisonous muck, there's a mountain of cobwebs, and within it, the largest fire/lava breathing spider -- Quelaag herself, the boss that punctuates this part of the game. It's not the most engaging fight, but the usage of minions leading up to her, an environment that reflected her impact, added to the sense of scale and importance, as if I really were fighting the strongest beast, the leader, in this area.
 
+None of these points are to stagger different explanations used for different bosses. Not every enemy can have an entire section of the game world carved out and molded for their benefit. The point is that *explained* boss fights always feel better. I also just find it interesting how each creates a sense of purpose in the "game world" relationship between the boss and the player. Why some fights happen and how many other don't because of how and when the player ventured through the world.
 
 #### Resources
 - [Interview with Hidetaka Miyazaki](https://www.gameinformer.com/games/demons_souls/b/ps3/archive/2009/11/05/feature-demon-s-souls-director-discusses-difficulty-sequels-and-more.aspx)
