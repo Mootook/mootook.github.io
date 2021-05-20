@@ -29,3 +29,5 @@ Todo:
     - [inquirer](https://www.npmjs.com/package/inquirer)
 - [x] Better Mobile support
 - [ ] Tag support
+- [ ] Make favicon watercolor painting
+- [ ] Migrate assets to imgur
