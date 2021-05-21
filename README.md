@@ -31,3 +31,4 @@ Todo:
 - [ ] Tag support
 - [ ] Make favicon watercolor painting
 - [ ] Migrate assets to imgur
+    - [ ] Use optimized photo for thumbnail
