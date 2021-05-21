@@ -1,5 +1,5 @@
 ---
-title: Almost Katamari Damacy
+title: Remaking Katamari Damacy
 date: Sat Apr 14 12:35:41 PDT 2021
 thumbnail: https://i.ibb.co/yknnM6w/katamari-damacy-gameplay-Moment.jpg
 prev:
@@ -22,7 +22,7 @@ I still lost the level and had to hand the controller back to my partner.
 We both watched the King of All Cosmos express his immense disappointment in my abilities.
 Yet I had become convinced that the controls suited the game. It's a simple game, with a simple objective: roll junk into a ball. And the quirky controls add a bit of a learning curve to it, and, for my experience, fed into the katamari chaos.
 
-I then wanted to see if I could mock up the core of Katamari's gameplay. So much of the game is about its other components -- the amazing soundtrack, iconic art, somewhat reflective and deprecating messaging about consumerism, or something. But in essence, I wanted to replicate the core mechanical interaction between the player, the katamari, and all the stuff you get to roll-up.
+I then wanted to see if I could mock up the core of Katamari's gameplay. So much of the game is about its other components -- the amazing soundtrack, iconic art, somewhat reflective and deprecating messaging about consumerism, or something. But in essence, I wanted to replicate the core mechanical interaction between the player, the katamari, and all the stuff you get to roll-up. I made a repo and called named my project "Almost Katamari."
 
 <VideoFrame videoUrl="https://www.youtube.com/embed/hEAP-4iUirY" />
 
