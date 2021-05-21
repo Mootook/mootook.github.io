@@ -1,6 +1,7 @@
 ---
 title: Third Person Movement
 date: Sat Apr 03 12:35:41 PDT 2021
+thumbnail: https://i.ibb.co/TbZV0k1/cc-thumbnail.png
 prev:
     text: Back to Projects
     link: /projects
@@ -243,9 +244,9 @@ The first iteration [05.11.2021] includes basic 3D locomotion, jumping, and fall
 Possible things I want to add or polish:
 
 - Falling/Landing animation states
-    - https://gamedev.stackexchange.com/questions/162853/how-to-disable-animation-root-motion
-    - https://assetstore.unity.com/packages/3d/animations/movement-animset-pro-14047 
-    - https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D 
+    - [Root Motion](https://gamedev.stackexchange.com/questions/162853/how-to-disable-animation-root-motion)
+    - [Assets](https://assetstore.unity.com/packages/3d/animations/movement-animset-pro-14047)
+    - [Animation](https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D)
 - Double jump
 - Ledge hanging (pull up to ledge)
 - Camera centering and focus (Zelda style z-targeting)

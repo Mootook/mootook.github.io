@@ -1,7 +1,7 @@
 ---
 title: Ghost of Tsushima - Level Design, Story, and Side-Quest Structure
 date: Fri Jul 31 00:32:04 PDT 2020
-category: notes
+thumbnail: https://i.imgur.com/1XGtSVDm.png
 prev:
     text: Back to Notes
     link: /notes

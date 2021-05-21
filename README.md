@@ -27,4 +27,8 @@ Todo:
 - [x] Trim the stored page data in the temp/json object
 - [ ] Node script to generate post/project post with default front matter
     - [inquirer](https://www.npmjs.com/package/inquirer)
-- [ ] Better Mobile support
+- [x] Better Mobile support
+- [ ] Tag support
+- [ ] Make favicon watercolor painting
+- [ ] Migrate assets to imgur
+    - [ ] Use optimized photo for thumbnail

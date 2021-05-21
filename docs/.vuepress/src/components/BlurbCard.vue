@@ -21,14 +21,18 @@ const formattedDate = computed(() => formatDate(new Date(props.blurb.date)) || '
 </script>
 
 <template>
-  <div class="article-card-wrapper">
-    <div class="title-wrapper">
-      <h3 @click="goToArticle">{{ blurb.title }}</h3>
-      <div class="title-separator" />
-      <span>{{ formattedDate }}</span>
-    </div>
-    <div class="snippet-wrapper">
-      <p>{{ blurb.description }}</p>
+  <div class="blurb-wrapper" @click="goToArticle">
+    <img :src="blurb.thumbnail" />
+    <div class="content-wrapper">
+      <h3>{{ blurb.title }}</h3>
+      <div class="date-wrapper">
+        <div class="title-separator leading" />
+        <span>{{ formattedDate }}</span>
+        <div class="title-separator" />
+      </div>
+      <div class="snippet-wrapper">
+        <p>{{ blurb.description }}</p>
+      </div>
     </div>
   </div>
   <div class="article-separator" />
@@ -36,53 +40,86 @@ const formattedDate = computed(() => formatDate(new Date(props.blurb.date)) || '
 
 <style scoped lang="scss">
 
-.article-card-wrapper {
+@mixin truncate-text($line-count: 1) {
+  display: -webkit-box;
+  /** overflow */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+$vertical-spacing: 0.5rem;
+
+.blurb-wrapper {
+  margin-bottom: 1rem;
   display: grid;
   grid-template-columns: 14rem 1fr;
-
-  
-  .title-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0.5rem 0 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; // spreads to full space of tag
+    opacity: 1;
+    pointer-events: none; // removes vuepress default behavior
+    transition: all 0.25s;
+  }
+  &:hover {
+    .content-wrapper {
+      h3 {
+        color: $accentColor-hover;
+      }
+    }
+  }
+  .content-wrapper {
+    padding-left: 1rem;
+    display: grid;
+    grid-template-rows: auto 1.25rem 1fr;
     h3 {
-      padding-bottom: 0.5rem;
-      color: $accentColor;
-      margin: unset;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      text-align: left;
+      @include truncate-text(2);
       word-break: break-word;
+      color: $accentColor;
+      margin: 0 0 $vertical-spacing 0;
       cursor: pointer;
       transition: color 0.25s;
     }
-    h3:hover {
-      color: $accentColor-hover;
-    }
+  }
+  .date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     span {
+      font-style: italic;
+      margin: 0 0.5rem 0 0.5rem;
       font-size: 0.8rem;
     }
     .title-separator {
       height: 1px;
-      width: 30%;
+      width: 20%;
       background-color: lightgray;
-      margin: 0.5rem 0 0.5rem 0;
+      &.leading {
+        width: 2rem;
+      }
     }
   }
   .snippet-wrapper {
-    margin: 0 0 1rem 2rem;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    margin: $vertical-spacing 0;
     p {
-      margin: 0;
+      margin: unset;
+      @include truncate-text(2);
     }
   }
 
   @media only screen and (max-width: 600px) {
+    img {
+      display: none;
+    }
     grid-template-columns: 1fr;
-    .snippet-wrapper {
-      margin: 1rem 1rem 1rem 0.5rem;
+    .content-wrapper {
+      padding-left: 0;
     }
   }
 }
