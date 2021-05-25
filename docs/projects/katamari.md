@@ -287,18 +287,30 @@ I also expanded the sphere collider on the katamari itself when it picked up a n
 // StickyProp.cs
 private void StickToKatamari(GameObject katamari)
 {
-    foreach (Transform child in transform)
-    {
-        if (child.tag == "PropMesh")
-            child.localScale /= 2;
-    }
     Destroy(_rb);
-    transform.SetParent(katamari.transform)
-
     KatamariController kController = katamari.GetComponent<KatamariController>();
-    kController.Expand();
+    kController.OnPropPickup(this);
+    // this should only
+    // happen after certain size thresholds
+    _camController.ExtendDistance();
+    transform.SetParent(katamari.transform);
+    // by shrinking the local position, once it's parented
+    // we can move the collider more towards the Katamari's center.
+    transform.localPosition /= 1.6f;
+    Transform childCollider = ChildColliderParent();
+    // scale down the mesh colliders
+    // of picked up objects so that they don't
+    // upset the sphere collider too much
+    if (childCollider)
+        childCollider.localScale /= COLLIDER_SHRINK_SCALE
+}
 
-    _cam.IncreaseDistance();
+private Transform ChildColliderParent()
+{
+    foreach (Transform child in transform)
+        if (child.tag == "PropMesh")
+            return child;
+    return null;
 }
 ```
 
@@ -315,8 +327,74 @@ The challenge of Katamari is often about passing these invisible thresholds, and
 
 It's a little more cumbersome to manually specify sizes on each object, but it gives the designers more control over the experience.
 
+Also, at times in the game, once certain size thresholds have been met, the game pauses briefly. There's some intermittent UI to show your progress.
+I believe the game uses this opporunity to reevaluate the scene. Larger objects within some range are then treated as "pickup-able", where as before they may have just been rigidbodies without any of the "StickyProp" stuff.
 
-## The level
+
+## Climbing
+
+With the current implementation, a lot of the basic actions were out of the way. Movement about the x and z of the world felt more or less in place, and in between starting level design and begging my partner into making me a Katamari styled song for game, I wanted to start adding the ability to climb.
+
+In Katamari, most objects you bump into ricochet you away. If you were moving fast enough, some of your collected items will fly off with accompanying sound. Yet if you approach an object slowly and then continue to move forward against the object, you can actually ascend it. It's a pretty fun way to traverse the level and makes for some interesting moments (some presents are hidden in high places, requiring the player to explore a level's verticality).
+
+<< CLIMBING GIF KATMARI >>
+
+Of course, in Unity, this interaction isn't natural. Pushing a ball straight into a wall or flat surface can't possibly make it rise, and thus, it was time to lie.
+
+I followed [this](https://catlikecoding.com/unity/tutorials/movement/climbing/) great tutorial from [Catike Coding](https://catlikecoding.com/) (and by followed, I mean ripped a great chunk of the code from and wrestled it into place). The general idea is to determine the nature of a collision when the katamari bumps up against something. One can cache data returned from these collision events and use them to determine how the katamari should respond to different types of collisions.
+
+```cs
+private void EvaluateCollision(Collision collision)
+{
+    int layer = collision.gameObject.layer;
+    for (int i = 0; i < collision.contactCount; i++)
+    {
+        Vector3 normal = collision.GetContact(i).normal;
+        float upDot = Vector3.Dot(Vector3.up, normal);
+        if (upDot >= minGroundDotProduct) {
+            groundContactCount += 1;
+            contactNormal += normal;
+            connectedBody = collision.rigidbody;
+        } else if (
+            upDot >= minClimbDotProduct &&
+            (climbMask & (1 << layer)) != 0 
+        ) {
+            climbContactCount += 1;
+            climbNormal += normal;
+            lastClimbNormal = normal;
+            connectedBody = collision.rigidbody;
+        }
+	}
+}
+```
+
+Here, we're determining whether the active collision being processed is the either the ground or some obstacle in front.
+
+For fuller explanations on the math, definitely check out Catlike Coding's tutorials (and all of them for that matter, they're really great).
+
+Then, in the `FixedUpdate()`, the cache data can be used to inform the  velocity of the Katamari, allowing for climbing!
+
+```cs
+private bool Climbing => climbContactCount > 0 && Vector3.Dot(lastClimbNormal, _input.nextForce) < maxClimbInputDot;
+
+private void FixedUpdate()    
+{
+    // abridged
+    if (Climbing)
+        velocity.y = Mathf.MoveTowards(velocity.y, maxClimbSpeed, climbDelta * Time.deltaTime);
+    else
+        velocity.y += gravity * Time.deltaTime;
+    _rb.velocity = velocity;
+   
+    ClearState(); // unsets cached contact data
+}
+```
+
+The manual application of gravity means the `Use Gravity` flag on the rigidbody just needs to be disabled so that it be applied selectively.
+
+Also, the `Climbing` boolean simply checks if if there's a climbContact stored and also enforces a bit of challenge in the climbing. In Katamari, climbing is only one way: up. In order to climb up, the player has to hold both sticks forward. If they waver too much, the katamari will stop ascending and plummet. For this, I just set an angle that gets converted to a maximum allowed dot product (variance between input vector and collision normal) to make sure the player is still climbing. The lower angle means a stricter check, and higher angles allow for some lateral movement while ascending.
+
+## The Level
 
 With some of the basics out of the way. I started designing out a level!
 Most Katamari levels start somewhere small: on a table, under a car. And the player is generally restricted to a singular area. The areas with larger props aren't necessarily inaccessible, but they are often hard to get to, and because the paths are lined with bigger and bigger items, they become impossible to navigate.
@@ -331,6 +409,10 @@ With most of my props being office-centric, I figured it'd be cool to start on a
 - [Unity Forums Sticky Ball](https://answers.unity.com/questions/634831/how-do-i-make-make-objects-stick-to-a-ball-and-aff.html)
 - [Unity Forums](https://answers.unity.com/questions/512537/oncollisionenter-that-effects-only-the-parent-or-o.html)
 - [Reddit Katamari-Like Showcase](https://www.reddit.com/r/Unity3D/comments/kv46c4/one_of_my_favorite_things_about_unity_is_the/)
+- [Katamari Clone Open Source](https://github.com/thebeardphantom/KatamariClone)
 
+### Assets
 
+- [Pickup Sound](https://freesound.org/people/rhodesmas/sounds/380292/)
+- [Collision Sound Effect](https://freesound.org/people/danlucaz/sounds/500283/)
 
