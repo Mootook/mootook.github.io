@@ -1,7 +1,7 @@
 ---
 title: Remaking Katamari Damacy
 date: Sat Apr 14 12:35:41 PDT 2021
-thumbnail: https://i.ibb.co/yknnM6w/katamari-damacy-gameplay-Moment.jpg
+thumbnail: https://i.imgur.com/brVDhzzm.jpg
 prev:
     text: Back to Projects
     link: /projects
@@ -20,24 +20,24 @@ Interesting...
 I tried a level and was thrown off within an instant by the whacky control scheme. It seemed unintuitive and unnecessarily difficult. After a few attempts though, I started to get the hang of it.
 I still lost the level and had to hand the controller back to my partner.
 We both watched the King of All Cosmos express his immense disappointment in my abilities.
-Yet I had become convinced that the controls suited the game. It's a simple game, with a simple objective: roll junk into a ball. And the quirky controls add a bit of a learning curve to it, and, for my experience, fed into the katamari chaos.
+Yet I had become convinced that the controls suited the game. It's a simple game, with a simple objective: roll junk into a ball. And the quirky controls add a bit of a learning curve to it and, for my experience, fed into the katamari chaos.
 
-I then wanted to see if I could mock up the core of Katamari's gameplay. So much of the game is about its other components -- the amazing soundtrack, iconic art, somewhat reflective and deprecating messaging about consumerism, or something. But in essence, I wanted to replicate the core mechanical interaction between the player, the katamari, and all the stuff you get to roll-up. I made a repo and called named my project "Almost Katamari."
+I then wanted to see if I could mock up the core of Katamari's gameplay. So much of the game is about its other components -- the amazing soundtrack, iconic art, somewhat reflective and deprecating messaging about consumerism, or something. But in essence, I wanted to replicate the core mechanical interaction between the player, the katamari, and all the stuff you get to roll-up. I made a repo and named my project "Almost Katamari."
 
 <VideoFrame videoUrl="https://www.youtube.com/embed/hEAP-4iUirY" />
 
 ## Beginning
 
-I started the scene by adding some of the usual packages: the new input manager, probuilder, and progrids. I also download this [asset](https://assetstore.unity.com/packages/3d/props/interior/polygon-office-low-poly-3d-art-by-synty-159492) (Synty's low poly 3d art) from the unity asset store in preparation for the 'interactable' items I'd like to implement.
+I started the scene by adding some of the usual packages: the new input manager, ProBuilder, and ProGrids. I also download this [asset](https://assetstore.unity.com/packages/3d/props/interior/polygon-office-low-poly-3d-art-by-synty-159492) (Synty's low poly 3d art) from the unity asset store in preparation for the "interactable" items I wanted to implement.
 
-![editor-1](https://i.ibb.co/LCd2Jdw/editor-1.png)
+![editor-1](https://i.imgur.com/yHNM1pG.png)
 
 With a rigidbody and input handler on the katmari game object, I started by trying to understand the whacky controls.
 
 
 ## Movement
 
-![controls](https://i.ibb.co/nmSrnkQ/controls.png)
+![controls](https://i.imgur.com/CmPlb7f.png)
 
 Trying to convert these into a program, even as pseudo-code, took me a bit to understand, and I had to spend a great deal of time in the Katamari tutorial area seeing how different axes configurations impacted the movement and rotation of the katamari.
 
@@ -49,47 +49,53 @@ I set up Unity's new input manager to read the left and right sticks of a gamepa
 // KatamariInputController.cs
 public void OnLeftThrottle(InputValue val)
 {
-    _leftThrottle = val.Get<Vector2>();
+    leftThrottle = val.Get<Vector2>();
 }
 
 public void OnRightThrottle(InputValue val)
 {
-    _rightThrottle = val.Get<Vector2>();
+    rightThrottle = val.Get<Vector2>();
 }
 ```
 
 The best way I thought of to determine the directional similarity of the two inputs was using their dot product.
-A positive dot product means the vectors are going in mostly the same direction, thus the input should be considered a movement, and if they're negative, then they're in opposing directions, and we should treat the input as a rotation.
+A positive dot product means the vectors are going in mostly the same direction, thus the input should be considered a movement, and if they're negative (or only one has a positive magnitude), then they're in opposing directions, and we should treat the input as a rotation.
 
 ```cs
 // KatamariInputController.cs
 private void Update()
 {
-    Vector3 localForce = Vector3.zero;
-    if (_leftThrottle != Vector2.zero && _rightThrottle != Vector2.zero)
+	Vector2 flatMovement = InputToFlatMovement();
+    nextForce = new Vector3(flatMovement.x, 0.0f, flatMovement.y);
+}
+
+private Vector2 InputToFlatMovement()
+{
+	Vector2 input = Vector2.zero;
+    float inputDot = Vector3.Dot(leftThrottle, rightThrottle);
+
+    bool inputsApproximatelySameDirection = inputDot > 0.0f;
+    if (inputsApproximatelySameDirection)
     {
-        _dot = Vector2.Dot(_leftThrottle, _rightThrottle);
-        if (_dot > 0.0f)
-        {
-            float avgX = (_leftThrottle.x + _rightThrottle.x) / 2;
-            float avgY = (_leftThrottle.y + _rightThrottle.y) / 2;
-            localForce = new Vector3(avgX, 0.0f, avgY):
-        }
+        float avgZ = (leftThrottle.y + rightThrottle.y) / 2.0f;
+        float avgX = (leftThrottle.x + rightThrottle.x) / 2.0f;
+        input.y = avgZ;
+        input.x = avgX;
     }
-    nextForce = localForce;
+    return input;
 }
 
 // KatamariController.cs
 private void Start()
 {
-    _input = GetComponent<KatamariInputController>(); 
-    _rb = GetComponent<Rigidbody>();
+    input = GetComponent<KatamariInputController>(); 
+    rigidBody = GetComponent<Rigidbody>();
 }
 
 private void FixedUpdate()
 {
-    if (_input.nextForce != Vector3.zero)
-        _rb.AddForce(_input.nextForce * pushForce);
+    if (input.nextForce != Vector3.zero)
+        rb.AddForce(input.nextForce * pushForce);
 }
 ```
 
@@ -107,108 +113,81 @@ Positive on the left (0, 1) pushes on the left-hand side of the katamari, thus w
 
 Positive on the right (0, 1) push on the right-hand side of the katamari, and thus we get counter-clockwise rotation about the y axis.
 
-First, I created a new script to manage the camera and follow the katamari's position.
-Putting the tracking logic in `LateUpdate()` made sure that the any movements applied to the katamari were finished when the camera was up to transform its own position.
+Rotating the katamari offsets its relative forward direction, and so in the next frame where we apply that input force, we need to account for this transformation. At first, I embedded this logic in a camera script. Inputs that were considered rotations would just orbit the camera about the katamari. Then, in the next frame of applying force, the katamari would just modify its values in relation to the space of the camera's rotation.
 
-```cs
-// SimpleCameraFollow.cs
-private void LateUpdate()
-{
-    UpdateTarget();
-    Vector3 target = _target.position;
-    Vector3 lookDir = transform.forward;
-    transform.localPosition = target - lookDirection * distance;
-}
-```
+Yet it felt odd for the katamari's input and motion to be aware of this. It would perhaps make more sense if complex rotational transforms were present in Katamari, but in general the only transformation that needs to be accounted for before applying force is rotation about the y-axis.
 
-Since there's only 1 axis about which to rotate, I simply stored the rotation direction in this camera script, being set by the input controller.
+So I stored this rotation in the y component of the input handler's `nextForce` instance variable.
+
 ```cs
 // KatamariInputController.cs
 private void Update()
 {
-    _camController.StickYToRotation(_leftThrottle.y, _rightThrottle.y);
-    // rigidbody force stuff
+	Vector2 flatMovement = InputToFlatMovement();
+    float yRotation = InputToYRotation();
+    nextForce = new Vector3(flatMovement.x, yRotation, flatMovement.y);
 }
 
-// SimpleCameraFolllow.cs
-
-private void LateUpdate()
+private float InputToYRotation()
 {
-    UpdateTarget();
-    ManualRotation();
-    Quaternion lookRotation = Quaternion.Euler(orbitAngles);
-    // set the local position
-    Vector3 lookDirection = lookRotation * Vector3.forward;
-    // Add one on the y to keep the camera off the ground
-    Vector3 localPosition = (_targetPoint - lookDirection * distance);
-    localPosition.y += 1;
-    transform.SetPositionAndRotation(localPosition, lookRotation);
+    float yRotation = 0.0f;
+
+    float leftVertical = leftThrottle.y;
+    float rightVertical = rightThrottle.y;
+
+    bool leftPush = leftVertical > rightVertical && leftVertical > 0.0f;
+    bool leftPull = Mathf.Abs(leftVertical) > rightVertical && Mathf.Abs(leftVertical) > 0.0f;
+
+    bool rightPush = rightVertical > leftVertical && rightVertical > 0.0f;
+    bool rightPull = Mathf.Abs(rightVertical) > leftVertical && Mathf.Abs(rightVertical) > 0.0f;
+
+    if ((leftPush && !rightPush) || (rightPull && !leftPull))
+        yRotation = (leftVertical - rightVertical) / 2.0f;
+    else if ((rightPush && !leftPush) || (leftPull && !rightPull))
+        yRotation = -Mathf.Abs((leftVertical - rightVertical)) / 2.0f;
+
+    return yRotation;
 }
 
-private void ManualRotation()
-{
-    const float e = 0.001f;
-    if (rotationDir > e || rotationDir < -e)
-        orbitAngles.y += rotationSpeed * Time.unscaledDeltaTime * rotationDir;
-}
-
-private void UpdateTarget()
-{
-    // update target properties
-    Vector3 nextTarget = target.position;
-    // force radius allows for a "deadzone"
-    // with the camera follow
-    // if the distance between the target on the last frame and current frame
-    // is larger than the parameter,
-    // Lerp into this new target point,
-    // if not, no movement.
-    if (forceRadius > 0f)
-    {
-        float distance = Vector3.Distance(nextTarget, _targetPoint);
-        // amount to interpolate
-        float t = 1f;
-        // recenter the camera to create a 
-        // 'catching up' effect
-        if (distance > 0.01f && focusCentering > 0f)
-            t = Mathf.Pow(1f - focusCentering, Time.unscaledDeltaTime);
-        if (distance > forceRadius)
-            t = Mathf.Min(t, forceRadius / distance);
-        _targetPoint = Vector3.Lerp(nextTarget, _targetPoint, t);
-    }
-    else
-        _targetPoint = nextTarget;
-}                                                                                                        
-
-public void StickYToRotation(float ly, float ry)
-{
-    const float e = 0.001f;
-    if (ly > e || ly < -e)
-        rotationDir = ly;
-    else if (ry > e || ry < -e)
-        // invert the ry as it behaves as the inverse of ly for rotationDir
-        rotationDir = -ry;
-    else
-        rotationDir = 0;
-}
 ```
 
-This worked nicely, and now it was a matter some conditions for ironing out the edge cases of accelerated rotation and preventing rotation when the inputs yielded movement.
-
+In order to account for the `yRotation` when the force is actually applied, I just got the result of the force's application against this rotational transformation.
 
 ```cs
-// KatamariInputController.cs
-
-// in Update()
-if (_dot > 0.0f)
+// KatamariController.cs
+private void Update()
 {
-    // movement stuff
-    _camController.HaltRotation();
+    rotationY += input.nextForce.y * Time.deltaTime * rotationMultiplier;
 }
-else if (_dot < 0.0f)
+
+private void FixedUpdate()
 {
-    _camController.AccelerateRotation();
+    ApplyInputForce();
+}
+
+private void ApplyInputForce()
+{
+    float lateralInput = input.nextForce.x;
+    float forwardInput = input.nextForce.z;
+
+    Vector3 force = new Vector3(
+        lateralInput * forceMultiplier,
+        0.0f,
+        forwardInput * forceMultiplier
+    );
+
+    velocity = Forward() * force;
+    rigidBody.AddForce(velocity);
+}
+
+private Quaternion Forward()
+{
+    Vector3 forward = new Vector3(0, rotationY, 0);
+    return Quaternion.Euler(forward);
 }
 ```
+
+After that, the camera's logic (A lot of this logic was frankensteined from [UnderGear's Klonmari](https://github.com/UnderGear/Klonamari/).) became much simpler in that it only needed to update its position and continue to `transform.LootAt(katamari.transform)` in its `LateUpdate()`.
 
 <VideoFrame videoUrl="https://www.youtube.com/embed/ZD3gld127-I" />
 
@@ -226,41 +205,82 @@ Yet Unity's physics engine understandably has a rough time with this...rigidbodi
 To combat this, I just detected the collision with Unity's `OnCollisionEnter(Collision collider)`.
 
 ```cs
-// StickyProp.cs
-private void OnCollisionEnter(Collision collider)
+// KatamariController.cs
+private void OnCollisionEnter(Collision colllision)
 {
-    if (
-        collider.gameObject.tag == "Katamari" &&
-        CanBeAbsorbed(collider.gameObject)
-    )
+  EvaluateCollision(collision);
+}
+
+private void EvaluateCollision(Collision collision)
+{
+   AttemptStick(collision);
+}
+
+private bool AttemptStick(Collision collision)
+{
+    bool collisionIsGround = collision.gameObject.layer == 6;
+    if (collisionIsGround)
+        return false;
+
+    Transform collisionTransform = collision.transform;
+    StickyProp prop = collisionTransform.GetComponent<StickyProp>();
+    bool didStick = false;
+    if (prop && prop.CanBeAbsorbed(Mass))
     {
-        StickToKatamari(collider.gameObject);
+        StickProp(prop);
+        didStick = true;
     }
+    else if (ShouldDetachRandomProp(collision))
+        DetachRandomProp();
+
+    return didStick;
+}
+
+private void StickProp(StickyProp prop)
+{
+    rigidBody.mass += prop.Mass;
+    prop.Stick(this);
 }
 ```
-And, called a private function in the same file called `StickToKatamari` assuming some basic checks passed (`CanBeAbsorbed()` is a stubbed function that always returns true, but I plan to use it to reject sticking object's bigger than the katamari).
+In evaluating the collision, the katamari is given time to check if the collision should result in the object being picked up `AttemptStick()`, and, if some checks (`CanBeAbsorbed(Mass)`) pass, pick it up `StickProp(prop)`.
 
-`StickToKatamari()` firstly needed to destroy the rigidbody, so that the following re-parenting didn't bug everything out.
-It then needed to do the re-parenting and call any additional functionality on object pickup.
+In Katamari, when an object is picked up, quite a few things happen.
 
-In the actual game, this list is quite long:
-- sound 
-- shows the latest item picked up
-- extends the distance the camera
-- Updates the gui for ball size
-- some other stuff im probably missing
+- A "success" sound is played
+- The object and name is shown in the UI
+- A temporary line is drawn from the UI object to its location on the katamari
+- The UI representation of the katamari is updated
+- Camera is distanced (not incrementally, but seemingly at certain size thresholds).
 
-<br />
+The prop's responsibility though, is quite small. It only needed to modify itself so that it could stick to the katamari.
 
 ```cs
 // StickyProp.cs
-private void StickToKatamari(GameObject katamari)
+private void Stick(KatamariController katamari)
 {
-    Destroy(_rb);
-    transform.SetParent(katamari.transform);
+    Destroy(rigidBody);
+    transform.SetParent(katamari.gameObject.transform);
+
+    Transform compoundCollider = ChildColliderParent();
+    compoundCollider.gameObject.layer = AbsorbedLayerMask();
+    if (compoundCollider)
+        SetLayerForAbsorbedColliders(compoundCollider);
+}
+
+private void SetLayerForAbsorbedColliders(Transform compoundCollider)
+{
+    foreach (Transform collider in compoundCollider)
+        collider.gameObject.layer = AbsorbedLayerMask();
+}
+
+private LayerMask AbsorbedLayerMask()
+{
+    return LayerMask.NameToLayer(ABSORBED_LAYER);
 }
 ```
-Seeing as I was going to create a large amount of these "props", I decided to spend some time converting the gameobject structure into a prefab that I could just attach different meshes onto.
+Changing the Layer of any stuck props was just to ensure that they didn't bug each other out.
+
+Seeing as I was going to create a large amount of these "props", I decided to spend some time converting the gameobject structure into a prefab that I could just attach different meshes onto and create child compound colliders within.
 
 Applying that onto some sandwiches and we get:
 
@@ -275,54 +295,177 @@ Occasionally there will be some long object on the katamari that can upset it, b
 
 This, it seems, is done, by fudging some of the colliders once they get attached to the Katamari and that the sphere's collider of the katamari is large enough to encapsulate all of the stuck objects with a few exceptions.
 
-And, subtly, as the katamari gets bigger, the camera distances itself on both the z and y axes, which, I assume, is done by manually incrementing the camera's offset each item pickup.
+![Colliders](https://i.imgur.com/xjqwDVy.jpg)
 
-![Colliders](https://i.ibb.co/DGSsG7n/knife-in-ground.png)
+For my own implementation I created a child on the "prop" prefab, onto which I attached the child colliders (either a singular boxcollider or an empty game object that parented a list of box colliders for more complex meshes).
 
-For my own implementation I created a child on the "prop" prefab, onto which I attached the mesh collider, and once it was picked up, I shrunk it in half.
-Outliers would still operate the same, but it wouldn't absolutely upset the momentum and force applied to the sphere.
-I also expanded the sphere collider on the katamari itself when it picked up a new object.
+When the prop was picked up, I then fudged its position by a configurable parameter.
 
-```cs
+```cs {6,14-17}
 // StickyProp.cs
-private void StickToKatamari(GameObject katamari)
+private void Stick(KatamariController katamari)
 {
-    Destroy(_rb);
-    KatamariController kController = katamari.GetComponent<KatamariController>();
-    kController.OnPropPickup(this);
-    // this should only
-    // happen after certain size thresholds
-    _camController.ExtendDistance();
-    transform.SetParent(katamari.transform);
-    // by shrinking the local position, once it's parented
-    // we can move the collider more towards the Katamari's center.
-    transform.localPosition /= 1.6f;
-    Transform childCollider = ChildColliderParent();
-    // scale down the mesh colliders
-    // of picked up objects so that they don't
-    // upset the sphere collider too much
-    if (childCollider)
-        childCollider.localScale /= COLLIDER_SHRINK_SCALE
+    Destroy(rigidBody);
+    transform.SetParent(katamari.gameObject.transform);
+    MoveTowardsParent();
+
+    Transform compoundCollider = ChildColliderParent();
+    compoundCollider.gameObject.layer = AbsorbedLayerMask();
+    if (compoundCollider)
+        SetLayerForAbsorbedColliders(compoundCollider);
 }
 
-private Transform ChildColliderParent()
+private void MoveTowardsParent()
 {
-    foreach (Transform child in transform)
-        if (child.tag == "PropMesh")
-            return child;
-    return null;
+    transform.localPosition /= absorbedToCenterDivisor;
 }
 ```
 
-This also helped with "props" that required multiple mesh colliders. 
+Yet this didn't solve the issue of longer props. Adding force to the katamari only goes forward, and when objects are sticking out, the application force simply pushes forward and does nothing to roll it over the prop.
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/MvKq0-L_KeI" />
+
+The solution  was to add torque to the katamari, informed similarly to the force.
+
+
+
+```cs {4}
+// KatamariController.cs
+private void FixedUpdate()
+{
+    ApplyInputTorque();
+    ApplyInputForce();
+}
+
+private void ApplyInputTorque()
+{
+	float forwardInput = input.nextForce.z;
+    float lateralInput = input.nextForce.x;
+
+    Vector3 torque = new Vector3(
+        forwardInput * torqueMultiplierWithMass,
+        input.nextForce.y * torqueMultiplierWithMass,
+        -lateralInput * torqueMultiplierWithMass
+    );
+
+    rigidBody.AddTorque(Forward() * torque);
+}
+```
+
+The x and z components have been switched from the force vector as the axis about which to apply the torque should be perpendicular to the forward direction.
+
+## Climbing
+
+With the current implementation, a lot of the basic actions were out of the way. Movement about the x and z of the world felt more or less in place, and in between starting level design and begging my partner into making me a Katamari styled song for game, I wanted to start adding the ability to climb.
+
+In Katamari, most objects you bump into ricochet you away. If you were moving fast enough, some of your collected items will fly off with accompanying sound. Yet if you approach an object slowly and then continue to move forward against the object, you can actually ascend it. It's a pretty fun way to traverse the level and makes for some interesting moments (some presents are hidden in high places, requiring the player to explore a level's verticality).
+
+Climbing in Katamari is pretty odd, but it's a mechanic I enjoy quite a bit, and after my partner and I had beaten the main game, we started going back through all the levels to find the presents (collectibles that the Prince can wear). A lot of these are in difficult places and involve climbing.
+
+<VideoFrame videoUrl="https://www.youtube.com/embed/G9qs5B6bzOs?start=76" />
+
+Of course, in Unity, this interaction isn't natural. Pushing a ball straight into a wall or flat surface can't possibly make it rise, and thus, it was time to lie.
+
+I followed [this](https://catlikecoding.com/unity/tutorials/movement/climbing/) great tutorial from [Catike Coding](https://catlikecoding.com/) (and by followed, I mean ripped a great chunk of the code from and wrestled it into place). The general idea is to determine the nature of a collision when the katamari bumps up against something. One can cache data returned from these collision events and use them to determine how the katamari should respond to different types of collisions.
+
+```cs
+// KatamariController.cs
+private void EvaluateCollision(Collision collision)
+{
+    if (AttemptStick(collision))
+        return;
+
+    int layer = collision.gameObject.layer;
+    for (int i = 0; i < collision.contactCount; i++)
+    {
+        Vector3 normal = collision.GetContact(i).normal;
+        float upDot = Vector3.Dot(Vector3.up, normal);
+
+        if (CollisionIsClimbable(upDot, layer))
+            UpdateStateForClimb(normal);
+        else if (CollisionIsGround(upDot))
+            UpdateStateForGround(normal);
+    }
+}
+
+private bool CollisionIsClimbable(float collisionUpDot, int collisionLayer)
+{
+    return collisionUpDot >= minClimbDotProduct && (climbMask & (1 << collisionLayer)) != 0;
+}
+
+private bool CollisionIsGround(float collisionUpDot)
+{
+    return collisionUpDot >= minGroundDotProduct;
+}
+```
+
+Here, we're determining whether the active collision being processed is the either the ground or some obstacle in front.
+
+For fuller explanations on the math, definitely check out Catlike Coding's tutorials (and all of them for that matter, they're really great).
+
+Then, in the `FixedUpdate()`, the cache data can be used to inform the velocity of the Katamari, allowing for climbing!
+
+```cs {9,11}
+// KatamariController.cs
+private bool Climbing => climbContactCount > 0 && Vector3.Dot(lastClimbNormal, velocity) < maxClimbInputDotProduct;
+
+private void FixedUpdate()    
+{
+    ApplyInputTorque();
+    ApplyInputForce();
+
+    AdjustVerticalVelocity();
+
+    ClearState();
+}
+
+private void AdjustVerticalVelocity()
+{
+    Vector3 currentVelocity = rigidBody.velocity;
+    float forceToVelocityFactor = 0.0001f;
+    if (Climbing)
+        currentVelocity.y = climbForceMultiplier * forceToVelocityFactor;
+    else
+        currentVelocity.y += gravity * Time.deltaTime;
+
+    rigidBody.velocity = currentVelocity;
+}
+
+private void ClearState()
+{
+    groundContactCount = climbContactCount = 0;
+    contactNormal = climbNormal = Vector3.zero;
+}
+```
+
+The manual application of gravity means the `Use Gravity` flag on the rigidbody just needs to be disabled so that it can be applied selectively.
+
+Also, the `Climbing` boolean simply checks if if there's a climbContact stored and also enforces a bit of challenge in the climbing. In Katamari, climbing is only one way: up. In order to climb up, the player has to hold both sticks forward. If they waver too much, the katamari will stop ascending and plummet. For this, I just set an angle that gets converted to a maximum allowed dot product (variance between input vector and collision normal) to make sure the player is still climbing. The lower angle means a stricter check, and higher angles allow for some lateral movement while ascending.
+
+
+
+```cs
+// KatamariController.cs
+private void OnValidate()
+{
+	maxClimbInputDotProduct = -Mathf.Cos(maxInputClimbAngle * Mathf.Deg2Rad)
+}
+```
+
+
+
+![climbing](https://i.imgur.com/24rKzyh.gif)
+
+There's a little bit of drift, but in general, I'm happy with how it's looking.
 
 ## Not picking up stuff
 
 Not picking up stuff required addressing Katamari's "sizing" system, or whatever internal logic is used to govern if or when the player can roll up a specific prop.
-At first it made the most to have this be determined by the Katamari's size...can only pick up props that the ball is larger than. Compare its bounds to that of the mesh in question, and good to go.
+At first it made the most to have this be determined by the Katamari's size...can only pick up props that the katamari is larger than. Compare its bounds or calculated mass to that of the mesh in question, and good to go.
+
 Yet as I played Katamari, I noticed that this behavior was not consistent. You could, for instance, pick up vending machines before people in some instances, or fences before small bushes, etc etc.
 
-This led me to the conclusion that the sizes must be manually being set, allowing designers to block certain props from being picked up until certain thresholds are met. 
+This led me to the conclusion that the masses must be manually being set, allowing designers to block certain props from being picked up until certain thresholds are met. 
 The challenge of Katamari is often about passing these invisible thresholds, and the fun comes from when the player succeeds and are able to roll everything up without interruption. Then they are moved into a new area to restart the process.
 
 It's a little more cumbersome to manually specify sizes on each object, but it gives the designers more control over the experience.
@@ -331,68 +474,6 @@ Also, at times in the game, once certain size thresholds have been met, the game
 I believe the game uses this opporunity to reevaluate the scene. Larger objects within some range are then treated as "pickup-able", where as before they may have just been rigidbodies without any of the "StickyProp" stuff.
 
 
-## Climbing
-
-With the current implementation, a lot of the basic actions were out of the way. Movement about the x and z of the world felt more or less in place, and in between starting level design and begging my partner into making me a Katamari styled song for game, I wanted to start adding the ability to climb.
-
-In Katamari, most objects you bump into ricochet you away. If you were moving fast enough, some of your collected items will fly off with accompanying sound. Yet if you approach an object slowly and then continue to move forward against the object, you can actually ascend it. It's a pretty fun way to traverse the level and makes for some interesting moments (some presents are hidden in high places, requiring the player to explore a level's verticality).
-
-<< CLIMBING GIF KATMARI >>
-
-Of course, in Unity, this interaction isn't natural. Pushing a ball straight into a wall or flat surface can't possibly make it rise, and thus, it was time to lie.
-
-I followed [this](https://catlikecoding.com/unity/tutorials/movement/climbing/) great tutorial from [Catike Coding](https://catlikecoding.com/) (and by followed, I mean ripped a great chunk of the code from and wrestled it into place). The general idea is to determine the nature of a collision when the katamari bumps up against something. One can cache data returned from these collision events and use them to determine how the katamari should respond to different types of collisions.
-
-```cs
-private void EvaluateCollision(Collision collision)
-{
-    int layer = collision.gameObject.layer;
-    for (int i = 0; i < collision.contactCount; i++)
-    {
-        Vector3 normal = collision.GetContact(i).normal;
-        float upDot = Vector3.Dot(Vector3.up, normal);
-        if (upDot >= minGroundDotProduct) {
-            groundContactCount += 1;
-            contactNormal += normal;
-            connectedBody = collision.rigidbody;
-        } else if (
-            upDot >= minClimbDotProduct &&
-            (climbMask & (1 << layer)) != 0 
-        ) {
-            climbContactCount += 1;
-            climbNormal += normal;
-            lastClimbNormal = normal;
-            connectedBody = collision.rigidbody;
-        }
-	}
-}
-```
-
-Here, we're determining whether the active collision being processed is the either the ground or some obstacle in front.
-
-For fuller explanations on the math, definitely check out Catlike Coding's tutorials (and all of them for that matter, they're really great).
-
-Then, in the `FixedUpdate()`, the cache data can be used to inform the  velocity of the Katamari, allowing for climbing!
-
-```cs
-private bool Climbing => climbContactCount > 0 && Vector3.Dot(lastClimbNormal, _input.nextForce) < maxClimbInputDot;
-
-private void FixedUpdate()    
-{
-    // abridged
-    if (Climbing)
-        velocity.y = Mathf.MoveTowards(velocity.y, maxClimbSpeed, climbDelta * Time.deltaTime);
-    else
-        velocity.y += gravity * Time.deltaTime;
-    _rb.velocity = velocity;
-   
-    ClearState(); // unsets cached contact data
-}
-```
-
-The manual application of gravity means the `Use Gravity` flag on the rigidbody just needs to be disabled so that it be applied selectively.
-
-Also, the `Climbing` boolean simply checks if if there's a climbContact stored and also enforces a bit of challenge in the climbing. In Katamari, climbing is only one way: up. In order to climb up, the player has to hold both sticks forward. If they waver too much, the katamari will stop ascending and plummet. For this, I just set an angle that gets converted to a maximum allowed dot product (variance between input vector and collision normal) to make sure the player is still climbing. The lower angle means a stricter check, and higher angles allow for some lateral movement while ascending.
 
 ## The Level
 
@@ -401,11 +482,10 @@ Most Katamari levels start somewhere small: on a table, under a car. And the pla
 
 With most of my props being office-centric, I figured it'd be cool to start on a desk or table, which would explain the large amounts of calculators, coffee cups, sandwiches, and the katamari could slowly progress to different areas of the office: cubicles, conference rooms, break rooms, the kitchen, maybe a lobby.
 
-
-
 ## Resources
 
 - [CatLikeCoding Orbit Camera](https://catlikecoding.com/unity/tutorials/movement/orbit-camera/)
+- [UnderGear's Klonmari](https://github.com/UnderGear/Klonamari/)
 - [Unity Forums Sticky Ball](https://answers.unity.com/questions/634831/how-do-i-make-make-objects-stick-to-a-ball-and-aff.html)
 - [Unity Forums](https://answers.unity.com/questions/512537/oncollisionenter-that-effects-only-the-parent-or-o.html)
 - [Reddit Katamari-Like Showcase](https://www.reddit.com/r/Unity3D/comments/kv46c4/one_of_my_favorite_things_about_unity_is_the/)
