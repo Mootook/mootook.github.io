@@ -72,7 +72,7 @@ private void Update()
 private Vector2 InputToFlatMovement()
 {
 	Vector2 input = Vector2.zero;
-    float inputDot = Vector3.Dot(leftThrottle, rightThrottle);
+    float inputDot = Vector2.Dot(leftThrottle, rightThrottle);
 
     bool inputsApproximatelySameDirection = inputDot > 0.0f;
     if (inputsApproximatelySameDirection)

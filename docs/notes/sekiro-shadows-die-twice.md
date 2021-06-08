@@ -100,7 +100,7 @@ Yeah, it's pretty. But it adds a frustrating variable. It's a weird translucent 
 
 This point also brings up a common problem in souls games: the camera. There is a common joke about the internet about the camera in FromSoftware games being the hardest boss, always there when you get pressed into a corner, orbiting at such an awkward angle you panic, lose focus, and ultimately die. Aggressive bosses force you into corners, make you feel at a disadvantage. Fights with them are claustrophobic, filled with pressured anxiety. The squished and unbalanced camera emphasizes this.
 
-In larger spaces, such as with the Guardian Ape, this isn't too much of a problem. Even with large, aggressive bosses, space gives the player options, mitigating the risk they get pressed against a wall and watch the camera orbit into an unnatural, uncomfortable angle.
+In larger spaces, such as with the Guardian Ape, this isn't too much of a problem. Even with large, aggressive bosses, space gives the player options, mitigating the risk they get pressed against a wall and watch the camera orbit into an unnatural, uncomfortable angle. Think, for instance, how much better the fight against Darkbeast Paarl would be with more space, more focus on the fight and the cool enemy design rather than the awkward camera.
 
 In summation, the space and simplicity of the Guardian Ape's arenas work to emphasize the boss's strengths of speed and aggression while rightly mitigating the usage of challenging environmental elements and tight corridors.
 
