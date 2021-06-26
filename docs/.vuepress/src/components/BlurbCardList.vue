@@ -28,7 +28,7 @@ const articleBlurbs = computed(() =>{
 
 <template>
   <div class="list-wrapper">
-    <BlurbCard v-for="blurb in articleBlurbs" :blurb="blurb" />
+    <BlurbCard v-for="blurb in articleBlurbs" :key="blurb.title" :blurb="blurb" />
   </div>
 </template>
 

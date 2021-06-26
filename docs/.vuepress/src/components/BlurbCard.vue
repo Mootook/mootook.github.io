@@ -69,7 +69,7 @@ $vertical-spacing: 0.5rem;
   &:hover {
     .content-wrapper {
       h3 {
-        color: $accentColor-hover;
+        color: var(--c-brand-light);
       }
     }
   }
@@ -81,7 +81,7 @@ $vertical-spacing: 0.5rem;
       text-align: left;
       @include truncate-text(2);
       word-break: break-word;
-      color: $accentColor;
+      color: var(--c-brand);
       margin: 0 0 $vertical-spacing 0;
       cursor: pointer;
       transition: color 0.25s;
