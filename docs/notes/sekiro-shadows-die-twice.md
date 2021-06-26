@@ -120,9 +120,9 @@ I've heard the argument that Dark Souls has "harder" enemies to justify. Its mor
 
 Zelda games, for example, have some fantastical, varied environments and enemies, yet it layers these elements with thematic level/dungeon design that compounds up to the final boss who is a manifestation of those narrative and aesthetic facets. Undertale uses humor, which is seen as consistent in the universe's absurdity to explain "out of place" NPCs.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; height: 12rem;">
-    <img style="object-fit: cover; width: 100%; height: 100%;" src="https://i.imgur.com/tgow7lk.png" />
-    <img src="https://i.imgur.com/RcmzIhc.gif"/>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; align-items:center;">
+    <img style="object-fit: cover; width: 100%; height: auto;" src="https://i.imgur.com/tgow7lk.png" />
+    <img style="object-fit: cover; width: 100%; height: auto;" src="https://i.imgur.com/RcmzIhc.gif"/>
 </div>
 
 

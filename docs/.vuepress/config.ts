@@ -21,7 +21,11 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
       { text: '/about', link: '/about' }
     ],
     contributors: false,
-    lastUpdated: false
+    lastUpdated: true,
+    darkMode: false,
+    themePlugins: {
+      backToTop: false // issues with chrome.
+    }
   },
   markdown: {
     code: {
@@ -31,7 +35,7 @@ export default defineUserConfig<DefaultThemeOptions, WebpackBundlerOptions>({
   bundlerConfig: {
     scss: {
       // bundle sass for components
-      additionalData: `@use "@styles/palette.scss" as *;`
+      // additionalData: `@use "@styles/palette.scss" as *;`
     }
   },
   onPrepared: async (app: App) => {
